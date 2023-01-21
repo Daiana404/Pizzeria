@@ -1,0 +1,58 @@
+.contenedor-carro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 800px;
+    .contenedor-ticket{
+        background-color: rgb(228, 227, 227);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        min-width: 280px;
+        min-height: 500px;
+        padding: $pad-10;
+        color: rgb(48, 48, 48);
+        font-size: 11px;
+        text-align: center;
+        h2{
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+        .ticket-info-empresa{
+            width: 200px;
+            padding-bottom: 5px;
+        }
+        hr{
+            width: 95%;
+            height: 0;
+            border: medium none;
+            border-top: 0.5px dashed gray;
+            padding-bottom: 8px;
+        }
+        #tabla-pedido{
+            width: 90%;
+            tbody{
+                .pedido-iconos{
+                    height: 10px;
+                }
+            }
+            tfoot{
+                tr{
+                    border-top-style: dotted;
+                    border-top-width: .5px;
+                }
+            }
+        }
+        
+        .iz{
+            text-align: left;
+        }
+        .dr{
+            text-align: right;
+        }
+    }
+}

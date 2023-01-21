@@ -413,3 +413,47 @@ body {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
     .box-producto .contador p, .box-producto .contador #nosotros .grid .info div h4, #nosotros .grid .info div .box-producto .contador h4, .box-producto .contador #pie div #nosotros .grid .info a h4, #pie div #nosotros .grid .info a .box-producto .contador h4 {
       padding: 0 10px; }
+
+.contenedor-carro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 800px; }
+  .contenedor-carro .contenedor-ticket {
+    background-color: #e4e3e3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-width: 280px;
+    min-height: 500px;
+    padding: 10px;
+    color: #303030;
+    font-size: 11px;
+    text-align: center; }
+    .contenedor-carro .contenedor-ticket h2 {
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 5px; }
+    .contenedor-carro .contenedor-ticket .ticket-info-empresa {
+      width: 200px;
+      padding-bottom: 5px; }
+    .contenedor-carro .contenedor-ticket hr {
+      width: 95%;
+      height: 0;
+      border: medium none;
+      border-top: 0.5px dashed gray;
+      padding-bottom: 8px; }
+    .contenedor-carro .contenedor-ticket #tabla-pedido {
+      width: 90%; }
+      .contenedor-carro .contenedor-ticket #tabla-pedido tbody .pedido-iconos {
+        height: 10px; }
+      .contenedor-carro .contenedor-ticket #tabla-pedido tfoot tr {
+        border-top-style: dotted;
+        border-top-width: .5px; }
+    .contenedor-carro .contenedor-ticket .iz {
+      text-align: left; }
+    .contenedor-carro .contenedor-ticket .dr {
+      text-align: right; }
