@@ -17,12 +17,25 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 180px;
+            
             height: 70px;
             text-align: center;
             img{
                 width: 20px;
                 height: 20px;
+                margin: 5px;
+            }
+            h1{
+                text-align: center;
+                width: 100%;
+                text-transform: uppercase;
+                color: rgba(83, 83, 83, 0.2);
+                text-transform: uppercase;
+                font-family: 'Oswald';
+                font-size: 45px;
+            }
+            p{
+                width: 180px;
             }
         }
     }
