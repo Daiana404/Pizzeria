@@ -11,142 +11,156 @@
 
 </head>
 <body>
-
-    <nav class="navegador" id="navegador">
-        <div class="box-menu">
-            
-            <ion-icon id="close-menu-icon" class="nav-bar-iconos" name="close-outline"></ion-icon>   
-
-            <ul class="lista">
-                <li><a href="#inicio">Napoli House</a></li>
-                <li><a href="#music">Napoli Music</a></li>
-                <li><a href="#categorias">Menú</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li id="item-carrito">
-                    <a href="./carrito.html"><ion-icon class="nav-bar-iconos bag-icon" name="bag-handle-outline"></ion-icon></ion-icon></a>
-                    <a href="./carrito.html">Ver mi pedido</a>
-                </li>
-            </ul>
-        </div>
-
-        <ion-icon id="menu-icon" class="nav-bar-iconos" name="menu-outline"></ion-icon>
-
-        <div class="box-cart">
-            <a href="./carrito.html"> 
-                <ion-icon id="carrito-icon" class="nav-bar-iconos bag-icon" name="bag-handle-outline"></ion-icon></ion-icon>
-            </a>
-        </div>
-    </nav>
-
-    <main>
-        <section id="inicio">
-            <img class="fondo" src="https://i.pinimg.com/564x/38/fa/c6/38fac68e57bc3c61b3e8844c493877dd.jpg" alt="">
-
-            <img id="logo-napoli" src="./scss/img/logo.png" alt="Logo">
-
-            <div class="inicio-promo">
-                <p>Estás a punto de entrar <br> en una explosión de sabor e intensidad.</p>
-                <p class="pregunta">¿Te animás a probar?</p>
-            </div>
-            <!-- <div class="nombre">
-                <h1>Napoli House</h1>
-            </div> -->
-
-            <!-- <img class="fondo" src="https://www.lanacion.com.ar/resizer/um37DSgDyWjYR2RH6Tcj5l-mYC0=/1920x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/NU43J76OCZEUHJMKKUWU63BRZ4.jpg" alt=""> -->
-
-
-            <a href="#categorias" class="btn-menu">Ver menú <ion-icon name="arrow-forward-outline"></ion-icon></a>
-
-        </section>
-
-        <section id="categorias">
-            <div class="box-slider">
-                <div class="wrapper">
-                    <div class="content">
-                        <img src="https://news3lv.com/resources/media/bd24c06a-f6ef-4e57-b3e6-7d5f39c941db-large16x9_PepperoniPizzaPhotoCredit_EugeneDelaCruz.jpg?1635458669315" alt="">
-                        <div  id="pizzas" class="contenedor">
-                            <h3>Pizzas</h3>
-                            <p>Con una espectacular salsa y quesos de la mejor selección.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <img src="https://i.ytimg.com/vi/K4WZ_hakRdg/maxresdefault.jpg" alt="">
-                        <div id="veganas" class="contenedor">
-                            <h3>Pizzas Veganas</h3>
-                            <p>Free cruelty. Los animales alimentan nuestros corazones con amor y ternura.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <img src="https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2018/05/08104146/69880881_153479185732915_6216192500126862846_n.jpg" alt="">
-                        <div id="hamburguesas" class="contenedor">
-                            <h3>Hamburguesas</h3>
-                            <p>Con carne de vaca deliciosa.
-                                Todas vienen con papas fritas.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <img src="https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <div id="papas-fritas" class="contenedor">
-                            <h3>Papas Fritas</h3>
-                            <p>¿Cómo no vas a pedir papas fritas? Esto si o sí.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <img src="https://t4.ftcdn.net/jpg/03/54/60/69/360_F_354606941_KXxaPENlry5SNBdjn1W3io9hSUW1vfa5.jpg" alt="">
-                        <div id="sandwiches" class="contenedor">
-                            <h3>Sandwiches</h3>
-                            <p>Calientes como vos y también fríos como el corazón de tu ex.</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <img src="https://www.bilbaoplan.com/wp-content/uploads/2019/06/de-copas-por-bilbao-1.jpg" alt="">
-                        <div id="bebidas" class="contenedor">
-                            <h3>Bebidas</h3>
-                            <p>Tragos para acompañar con unas buenas pizzas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="muestra-productos">
-            <div class="titulo-seccion">
-                <h2 id="titulo-categoria">Holaaa</h2>
-            </div>
-            <div id="contenedor-productos">
-                <!-- Se completa con JS -->
-            </div>
-        </section>
-
-        <section id="nosotros">
+    <div class="solo-mobile">
+        Solo disponible para dispositivos mobile <img src="./scss/ico/sonreir.svg" alt="">
+    </div>
+    <div class="body-contenedor">
+        <nav class="navegador" id="navegador">
+            <div class="box-menu">
                 
-            <div class="grid">
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6969.631127830443!2d-59.650649614294444!3d-29.140629988174588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1203ed6d253043b9!2sNapoli%20House!5e0!3m2!1ses!2sar!4v1672862414819!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="info">
-                    <h3>Dónde encontrarnos</h3> 
-
-                    <p class="descripcion color-gray">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora, nemo quibusdam dolorem, commodi aspernatur officiis quas perferendis, libero hic quo dolores modi et repellendus expedita sit voluptate quam numquam.</p>
-
-                    <div><h4>whatsapp:</h4> <p class="color-gray">3482-123456</p></div>
-                    <div><h4>instagram:</h4> <p class="color-gray">@napolihousee</p></div>
-                    <div><h4>teléfono:</h4> <p class="color-gray">342-1234</p></div>
-                    <br>
-                    <div><h4>dirección:</h4> <p class="color-gray">esquina de olessio y moreno <br> reconquista santa fe</p></div>
-                </div>
+                <ion-icon id="close-menu-icon" class="nav-bar-iconos" name="close-outline"></ion-icon>   
+    
+                <ul class="lista">
+                    <li><a href="#inicio">Napoli House</a></li>
+                    <li><a href="#music">Napoli Music</a></li>
+                    <li><a href="#categorias">Menú</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li id="item-carrito">
+                        <a href="./carrito.html"><ion-icon class="nav-bar-iconos bag-icon" name="bag-handle-outline"></ion-icon></ion-icon></a>
+                        <a href="./carrito.html">Ver mi pedido</a>
+                    </li>
+                </ul>
             </div>
-
-        </section>
-    </main>
-
-    <footer id="pie">
-        <div>copyright by napoli house</div>
-        <div><a href="#inicio">inicio</a> <a href="#categorias">menu</a></div>
-        <div class="creditos">desarrollado por polo daiana</div>
-    </footer>
-
+    
+            <ion-icon id="menu-icon" class="nav-bar-iconos" name="menu-outline"></ion-icon>
+    
+            <div class="box-cart">
+                <a href="./carrito.html"> 
+                    <ion-icon id="carrito-icon" class="nav-bar-iconos bag-icon" name="bag-handle-outline"></ion-icon></ion-icon>
+                    <div id="numerito">0</div>
+                </a>
+            </div>
+        </nav>
+    
+        <main>
+            <section id="inicio">
+                <img class="fondo" src="https://i.pinimg.com/564x/38/fa/c6/38fac68e57bc3c61b3e8844c493877dd.jpg" alt="">
+    
+                <img id="logo-napoli" src="./scss/img/logo.png" alt="Logo">
+    
+                
+                <div class="inicio-promo">
+                    <p>Estás a punto de entrar <br> en una explosión de sabor e intensidad.</p>
+                    <p class="pregunta">¿Te animás a probar?</p>
+                </div>
+                <!-- <div class="nombre">
+                    <h1>Napoli House</h1>
+                </div> -->
+    
+                <!-- <img class="fondo" src="https://www.lanacion.com.ar/resizer/um37DSgDyWjYR2RH6Tcj5l-mYC0=/1920x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/NU43J76OCZEUHJMKKUWU63BRZ4.jpg" alt=""> -->
+    
+    
+                <a href="#categorias" class="btn-menu">Ver menú <ion-icon name="arrow-forward-outline"></ion-icon> </a>
+    
+            </section>
+    
+            <section id="categorias">
+                <div class="box-slider">
+                    <div class="wrapper">
+                        <div class="content">
+                            <img src="https://news3lv.com/resources/media/bd24c06a-f6ef-4e57-b3e6-7d5f39c941db-large16x9_PepperoniPizzaPhotoCredit_EugeneDelaCruz.jpg?1635458669315" alt="">
+                            <div  id="pizzas" class="contenedor">
+                                <h3>Pizzas</h3>
+                                <p>Con una espectacular salsa y quesos de la mejor selección.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="https://i.ytimg.com/vi/K4WZ_hakRdg/maxresdefault.jpg" alt="">
+                            <div id="veganas" class="contenedor">
+                                <h3>Pizzas Veganas</h3>
+                                <p>Free cruelty. Los animales alimentan nuestros corazones con amor y ternura.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2018/05/08104146/69880881_153479185732915_6216192500126862846_n.jpg" alt="">
+                            <div id="hamburguesas" class="contenedor">
+                                <h3>Hamburguesas</h3>
+                                <p>Con carne de vaca deliciosa.
+                                    Todas vienen con papas fritas.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <div id="papas-fritas" class="contenedor">
+                                <h3>Papas Fritas</h3>
+                                <p>¿Cómo no vas a pedir papas fritas? Esto si o sí.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="https://t4.ftcdn.net/jpg/03/54/60/69/360_F_354606941_KXxaPENlry5SNBdjn1W3io9hSUW1vfa5.jpg" alt="">
+                            <div id="sandwiches" class="contenedor">
+                                <h3>Sandwiches</h3>
+                                <p>Calientes como vos y también fríos como el corazón de tu ex.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="https://www.bilbaoplan.com/wp-content/uploads/2019/06/de-copas-por-bilbao-1.jpg" alt="">
+                            <div id="bebidas" class="contenedor">
+                                <h3>Bebidas</h3>
+                                <p>Tragos para acompañar con unas buenas pizzas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="muestra-productos">
+                <div class="titulo-seccion">
+                    <h2 id="titulo-categoria">Holaaa</h2>
+                </div>
+                <div id="contenedor-productos">
+                    <!-- Se completa con JS -->
+                </div>
+            </section>
+    
+            <section id="nosotros">
+                    
+                <div class="grid">
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6969.631127830443!2d-59.650649614294444!3d-29.140629988174588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1203ed6d253043b9!2sNapoli%20House!5e0!3m2!1ses!2sar!4v1672862414819!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <h3>Dónde encontrarnos</h3> 
+    
+                        <p class="descripcion color-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora, nemo quibusdam dolorem, commodi aspernatur officiis quas perferendis, libero hic quo dolores modi et repellendus expedita sit voluptate quam numquam.</p>
+    
+                        <div><h4>whatsapp:</h4> <p class="color-gray">3482-123456</p></div>
+                        <div><h4>instagram:</h4> <p class="color-gray">@napolihousee</p></div>
+                        <div><h4>teléfono:</h4> <p class="color-gray">342-1234</p></div>
+                        <br>
+                        <div><h4>dirección:</h4> <p class="color-gray">esquina de olessio y moreno <br> reconquista santa fe</p></div>
+                    </div>
+                </div>
+    
+            </section>
+        </main>
+    
+        <footer id="pie">
+            <div class="copyright">© copyright by napoli house</div>
+            <div>
+                <a href="#inicio">inicio</a> <a href="#categorias">menu</a>
+                <a href="#">napoli music</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+            <div class="creditos">desarrollado por <a href="https://www.instagram.com/daia_polo/?next=%2F">Polo Daiana</a></div>
+        </footer>
+    
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./js/menu.js"></script>

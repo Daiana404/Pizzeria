@@ -8,81 +8,103 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="solo-mobile">
+        Solo disponible para dispositivos mobile <img src="./scss/ico/sonreir.svg" alt="">
+    </div>
+    <div class="body-contenedor">
+        <nav class="navegador-carrito">
+            <a href="./index.html"><ion-icon name="arrow-back-outline"></ion-icon></a>
+        </nav>
+        <main>
+            <div class="contenedor-carro">
+                
+            <div class="contenedor-ticket">
     
-    <main>
-        <div class="contenedor-carro">
-            <h1>Tu pedido</h1>
-        <div class="contenedor-ticket">
-
-            <h2>Napoli House</h2>
-            <p class="ticket-info-empresa">Dirección: Esquina de Olessio y Moreno</p>
-            <p class="ticket-info-empresa">Tel: 3482123456</p>
-
-            <hr>
-
-            <table id="tabla-pedido">
-                <thead>
-                    <tr>
-                        <th class="iz" scope="col">Descripción</th>
-                        <th scope="col">Cant.</th>
-                        <th class="dr" scope="col">Precio</th>
-                    </tr>
-                </thead>
-                <tbody id="tabla-body">
-                    <!-- Se completa con JS -->
-                    <tr id="producto-uno">
-                        <td class="iz" >
-                            <img class="pedido-iconos" src="./scss/ico/porcion-de-pizza.svg" alt=""> Pepperoni
-                        </td>
-                        <td>2</td>
-                        <td class="dr" >$2200</td>
-                    </tr>
-                    <tr id="producto-dos">
-                        <td class="iz" >
-                            <img class="pedido-iconos" src="./scss/ico/hamburger.svg" alt="">
-                            Chuck Norris</td>
-                        <td>1</td>
-                        <td class="dr" >$1300</td>
-                    </tr>
-                    <tr id="producto-tres">
-                        <td class="iz" >
-                            <img class="pedido-iconos" src="./scss/ico/sandwich.svg" alt="">
-                            Triple de pollo</td>
-                        <td>3</td>
-                        <td class="dr" >$2400</td>
-                    </tr>
-                    <tr id="producto-cuatro">
-                        <td class="iz" >
-                            <img class="pedido-iconos" src="./scss/ico/drink-alt.svg" alt="">
-                            Coca-cola</td>
-                        <td>1</td>
-                        <td class="dr" >$500</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th class="iz" scope="row">Total</th>
-                        <td class="dr" colspan="2">$<span>6400</span></td>
-                    </tr>
-                </tfoot>
-            </table>
-
-            <hr>
+                <h2>Napoli House</h2>
+                <p class="ticket-info-empresa">Dirección: Esquina de Olessio y Moreno</p>
+                <p class="ticket-info-empresa">Tel: 3482123456</p>
+    
+                <hr>
+                <h1>tu pedido a la orden!</h1>
+                <hr>
+                
+    
+                <table id="tabla-pedido">
+                    <thead>
+                        <tr>
+                            <th class="iz" scope="col">Descripción</th>
+                            <th scope="col">Cant.</th>
+                            <th class="dr" scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+                        <!-- Se completa con JS -->
+                        <tr id="producto-uno">
+                            <td class="iz" >
+                                <img class="pedido-iconos" src="./scss/ico/porcion-de-pizza.svg" alt=""> Pepperoni
+                            </td>
+                            <td>2</td>
+                            <td class="dr" >$2200</td>
+                        </tr>
+                        <tr id="producto-dos">
+                            <td class="iz" >
+                                <img class="pedido-iconos" src="./scss/ico/hamburger.svg" alt="">
+                                Chuck Norris</td>
+                            <td>1</td>
+                            <td class="dr" >$1300</td>
+                        </tr>
+                        <tr id="producto-tres">
+                            <td class="iz" >
+                                <img class="pedido-iconos" src="./scss/ico/sandwich.svg" alt="">
+                                Triple de pollo</td>
+                            <td>3</td>
+                            <td class="dr" >$2400</td>
+                        </tr>
+                        <tr id="producto-cuatro">
+                            <td class="iz" >
+                                <img class="pedido-iconos" src="./scss/ico/drink-alt.svg" alt="">
+                                Coca-cola</td>
+                            <td>1</td>
+                            <td class="dr" >$500</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="dot-line">
+                            <td class="iz total" scope="row">Total</th>
+                            <td class="dr precio" colspan="2">$<span>6400</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+                <p class="advertencia">No válido como ticket</p>
+                <hr>
+                
+                <p class="thx">Gracias!</p>
+                
+            </div>
+            <div class="boton-volver">
+    
+            </div>
+            </div>
             
-            <!--<p>Gracias!</p> -->
-            
-        </div>
-        <div class="boton-volver">
+        </main>
+    
+        <footer id="pie">
+            <div class="copyright">© copyright by napoli house</div>
+            <div>
+                <a href="index.html">inicio</a> <a href="./index.html#categorias">menu</a>
+                <a href="#">napoli music</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+            <div class="creditos">desarrollado por <a href="https://www.instagram.com/daia_polo/?next=%2F">Polo Daiana</a></div>
+        </footer>
+    </div>
 
-        </div>
-        </div>
-        
-    </main>
-
-    <footer id="pie">
-        <div>copyright by napoli house</div>
-        <div><a href="#inicio">inicio</a> <a href="#categorias">menu</a></div>
-        <div class="creditos">desarrollado por polo daiana</div>
-    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

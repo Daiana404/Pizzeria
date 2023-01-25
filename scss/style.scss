@@ -116,6 +116,21 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        #numerito{
+            background-color: $rojo;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top: 0;
+            right: -5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            color: white;
+        }
     }
 }
 
@@ -133,6 +148,7 @@ body{
 #inicio{
     height: 100vh;
     position: relative;
+    
     .inicio-promo{
         position: absolute;
         left: $pad-20;
@@ -199,7 +215,7 @@ body{
     justify-content: center;
     align-items: center;
     .wrapper{
-        max-width: 400px;
+        max-width: 450px;
         width: 100%;
         overflow-x: auto;
         display: flex;
@@ -251,6 +267,7 @@ body{
                         text-transform: uppercase;
                         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);/* 
                         width: 80%; */
+                        text-align: left;
                     }
                     p{
                         width: 90%;
@@ -384,10 +401,22 @@ body{
             color: white;
         }
     }
+    .copyright{
+        text-transform: capitalize;
+    }
     .creditos{
         text-transform: capitalize;
+        font-size: 11px;
+        a{
+            @extend .creditos;
+        }
+    }
+    .social-media a ion-icon{
+        width: 15px;
+        height: 15px;
     }
 }
 
 @import './styles/productos';
 @import './styles/carrito';
+@import './components/media';
