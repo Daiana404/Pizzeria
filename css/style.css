@@ -308,7 +308,7 @@ body {
         font-weight: 300; }
 
 #pie {
-  height: 120px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -435,95 +435,104 @@ body {
     .box-producto .contador p, .box-producto .contador #nosotros .grid .info div h4, #nosotros .grid .info div .box-producto .contador h4, .box-producto .contador #pie div #nosotros .grid .info a h4, #pie div #nosotros .grid .info a .box-producto .contador h4 {
       padding: 0 10px; }
 
-.contenedor-carro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  min-height: 650px;
-  height: 100vh; }
-  .contenedor-carro .contenedor-ticket {
-    background-color: #e4e3e3;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    min-width: 280px;
-    min-height: 350px;
-    padding: 10px;
-    padding-bottom: 35px;
-    color: #303030;
-    font-size: 11px;
-    text-align: center;
-    position: relative; }
-    .contenedor-carro .contenedor-ticket h1 {
-      padding: 0;
-      font-size: 12px;
-      font-weight: 300;
-      text-transform: uppercase; }
-    .contenedor-carro .contenedor-ticket .advertencia {
-      font-size: 10px;
-      /* width: 100%;
-            padding: 0 5px;
-            text-align: left; */
-      font-weight: 300; }
-    .contenedor-carro .contenedor-ticket h2 {
-      font-size: 15px;
-      text-transform: uppercase;
-      padding: 5px; }
-    .contenedor-carro .contenedor-ticket .ticket-info-empresa {
-      width: 200px;
-      padding-bottom: 5px; }
-    .contenedor-carro .contenedor-ticket hr {
-      width: 95%;
-      height: 0;
-      border: medium none;
-      border-top: 0.5px dashed gray;
-      padding-bottom: 8px;
-      margin-top: 8px; }
-    .contenedor-carro .contenedor-ticket #tabla-pedido {
-      width: 90%; }
-      .contenedor-carro .contenedor-ticket #tabla-pedido tbody .pedido-iconos {
-        height: 10px; }
-      .contenedor-carro .contenedor-ticket #tabla-pedido tfoot .dot-line td {
-        border-top-style: dashed;
-        border-top-width: .5px;
-        border-color: gray;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 4px 0; }
-    .contenedor-carro .contenedor-ticket .thx {
-      font-size: 12px;
-      text-transform: uppercase;
-      position: absolute;
-      bottom: 10px; }
-    .contenedor-carro .contenedor-ticket .iz {
-      text-align: left; }
-    .contenedor-carro .contenedor-ticket .dr {
-      text-align: right; }
-
-.navegador-carrito {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  border-bottom-right-radius: 10px; }
-  .navegador-carrito a {
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    height: 100%;
+.body-contenedor {
+  position: relative; }
+  .body-contenedor .contenedor-carro {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+    padding: 20px 0; }
+    .body-contenedor .contenedor-carro .contenedor-ticket {
+      background-color: #e4e3e3;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      min-width: 280px;
+      min-height: 350px;
+      padding: 10px;
+      padding-bottom: 35px;
+      color: #303030;
+      font-size: 11px;
+      text-align: center;
+      position: relative; }
+      .body-contenedor .contenedor-carro .contenedor-ticket h3 {
+        padding: 0;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase; }
+      .body-contenedor .contenedor-carro .contenedor-ticket .advertencia {
+        font-size: 10px;
+        /* width: 100%;
+                padding: 0 5px;
+                text-align: left; */
+        font-weight: 300; }
+      .body-contenedor .contenedor-carro .contenedor-ticket h2 {
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 5px; }
+      .body-contenedor .contenedor-carro .contenedor-ticket .ticket-info-empresa {
+        width: 200px;
+        padding-bottom: 5px; }
+      .body-contenedor .contenedor-carro .contenedor-ticket hr {
+        width: 95%;
+        height: 0;
+        border: medium none;
+        border-top: 0.5px dashed gray;
+        padding-bottom: 8px;
+        margin-top: 8px; }
+      .body-contenedor .contenedor-carro .contenedor-ticket #tabla-pedido {
+        width: 90%; }
+        .body-contenedor .contenedor-carro .contenedor-ticket #tabla-pedido tbody .pedido-iconos {
+          height: 10px; }
+        .body-contenedor .contenedor-carro .contenedor-ticket #tabla-pedido tfoot .dot-line td {
+          border-top-style: dashed;
+          border-top-width: .5px;
+          border-color: gray;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 4px 0; }
+      .body-contenedor .contenedor-carro .contenedor-ticket .thx {
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 10px; }
+      .body-contenedor .contenedor-carro .contenedor-ticket .iz {
+        text-align: left; }
+      .body-contenedor .contenedor-carro .contenedor-ticket .dr {
+        text-align: right; }
+  .body-contenedor .navegador-carrito {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: fixed;
     border-bottom-right-radius: 10px; }
-    .navegador-carrito a ion-icon {
-      transition: 500ms;
-      width: 18px;
-      height: 18px; }
-  .navegador-carrito a:hover ion-icon {
-    color: #c91905; }
+    .body-contenedor .navegador-carrito a {
+      text-decoration: none;
+      color: black;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-right-radius: 10px; }
+      .body-contenedor .navegador-carrito a ion-icon {
+        transition: 500ms;
+        width: 18px;
+        height: 18px; }
+    .body-contenedor .navegador-carrito a:hover ion-icon {
+      color: #c91905; }
+  .body-contenedor h1 {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: rgba(83, 83, 83, 0.2);
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 45px; }
 
 @media only screen and (min-width: 450px) {
   .body-contenedor {

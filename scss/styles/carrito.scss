@@ -1,116 +1,129 @@
-.contenedor-carro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 650px;
-    height: 100vh;
-    .contenedor-ticket{
-        background-color: rgb(228, 227, 227);
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        flex-direction: column;
-        min-width: 280px;
-        min-height: 350px;
-        padding: $pad-10;
-        padding-bottom: 35px;
-        color: rgb(48, 48, 48);
-        font-size: 11px;
-        text-align: center;
-        position: relative;
-
-        h1{
-            padding: 0;
-            font-size: 12px;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-        .advertencia{
-            font-size: 10px;
-            /* width: 100%;
-            padding: 0 5px;
-            text-align: left; */
-            font-weight: 300;
-        }
-        h2{
-            font-size: 15px;
-            text-transform: uppercase;
-            padding: 5px;
-        }
-        .ticket-info-empresa{
-            width: 200px;
-            padding-bottom: 5px;
-        }
-        hr{
-            width: 95%;
-            height: 0;
-            border: medium none;
-            border-top: 0.5px dashed gray;
-            padding-bottom: 8px;
-            margin-top: 8px;
-        }
-        #tabla-pedido{
-            width: 90%;
-            tbody{
-                .pedido-iconos{
-                    height: 10px;
-                }
-            }
-            tfoot{
-                
-                .dot-line{
-                    td{
-                        border-top-style: dashed;
-                        border-top-width: .5px;
-                        border-color: gray;
-                        font-size: 12px;
-                        font-weight: bold;
-                        padding: 4px 0;
-                    }
-                }
-            }
-            
-        }
-        .thx{
-            font-size: 12px;
-            text-transform: uppercase;
-            position: absolute;
-            bottom: $pad-10;
-        }
-        
-        .iz{
-            text-align: left;
-        }
-        .dr{
-            text-align: right;
-        }
-    }
-}
-.navegador-carrito{
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    
-    position: fixed;
-    border-bottom-right-radius: 10px;
-    a{
-        text-decoration: none;
-        color: black;
-        width: 100%;
-        height: 100%;
+.body-contenedor{
+    position: relative;
+    .contenedor-carro{
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom-right-radius: 10px;
-        ion-icon{
-            transition: $trans-05;
-            width: 18px;
-            height: 18px;
+        flex-direction: column;
+        width: 100%;
+        min-height: 600px;
+        padding: $pad-20 0;
+        
+        .contenedor-ticket{
+            background-color: rgb(228, 227, 227);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            min-width: 280px;
+            min-height: 350px;
+            padding: $pad-10;
+            padding-bottom: 35px;
+            color: rgb(48, 48, 48);
+            font-size: 11px;
+            text-align: center;
+            position: relative;
+    
+            h3{
+                padding: 0;
+                font-size: 12px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            .advertencia{
+                font-size: 10px;
+                /* width: 100%;
+                padding: 0 5px;
+                text-align: left; */
+                font-weight: 300;
+            }
+            h2{
+                font-size: 15px;
+                text-transform: uppercase;
+                padding: 5px;
+            }
+            .ticket-info-empresa{
+                width: 200px;
+                padding-bottom: 5px;
+            }
+            hr{
+                width: 95%;
+                height: 0;
+                border: medium none;
+                border-top: 0.5px dashed gray;
+                padding-bottom: 8px;
+                margin-top: 8px;
+            }
+            #tabla-pedido{
+                width: 90%;
+                tbody{
+                    .pedido-iconos{
+                        height: 10px;
+                    }
+                }
+                tfoot{
+                    
+                    .dot-line{
+                        td{
+                            border-top-style: dashed;
+                            border-top-width: .5px;
+                            border-color: gray;
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding: 4px 0;
+                        }
+                    }
+                }
+                
+            }
+            .thx{
+                font-size: 12px;
+                text-transform: uppercase;
+                position: absolute;
+                bottom: $pad-10;
+            }
+            
+            .iz{
+                text-align: left;
+            }
+            .dr{
+                text-align: right;
+            }
         }
     }
-    a:hover ion-icon{
-        color: $rojo;
+    .navegador-carrito{
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        
+        position: fixed;
+        border-bottom-right-radius: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-right-radius: 10px;
+            ion-icon{
+                transition: $trans-05;
+                width: 18px;
+                height: 18px;
+            }
+        }
+        a:hover ion-icon{
+            color: $rojo;
+        }
+    }
+    h1{
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        color: rgba(83, 83, 83, 0.2);
+        text-transform: uppercase;
+        font-family: 'Oswald';
+        font-size: 45px;
     }
 }

@@ -376,7 +376,7 @@ body{
 }
 
 #pie{
-    height: 120px;
+    height: $h-pie;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
