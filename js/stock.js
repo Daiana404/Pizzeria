@@ -267,18 +267,6 @@ const productos = [
         }
     },
     {
-        nombre: "Cherry y pesto",
-        id: "cherry-y-pesto",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto', '', ''],
-        img: './scss/img/pizzas/pizza.png',
-        categoria: {
-            nombre: 'Pizzas veganas',
-            id: 'veganas'
-        }
-    },
-    {
         nombre: "Texana",
         id: "texana",
         precio1: 1000,
@@ -627,6 +615,8 @@ const seccionProductos = document.getElementById('muestra-productos');
 const contenedorProductos = document.getElementById('contenedor-productos');
 const botonesCategorias = document.querySelectorAll('.contenedor');
 const tituloCategoriaContenedor = document.getElementById('titulo-categoria');
+let botonesAgregar = document.querySelectorAll('.casilla-add');
+const numerito = document.querySelector('#numerito');
 
 //Guardo en un array, la lista de ingredientes
 
@@ -657,13 +647,13 @@ function agregarProductos(seleccionados) {
                             <ion-icon class="resta-btn" id="resta-${producto.id}" name="remove-outline"></ion-icon>
                             <p class="txtCont" id="txt-${producto.id}"> 0 </p>
                 </div>
-                <div class="casilla-add" name="add-btn-${producto.id}">
+                <div class="casilla-add" id="${producto.id}">
                             <ion-icon class="suma-btn" id="suma-${producto.id}" name="add-outline"></ion-icon>
                 </div>
             `;
         }else{
             div.innerHTML = `
-        <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
+            <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
             <div class="casilla-info">
                         <h2 class="nombre">${producto.nombre}</h2>
                     <p class="precio"><span style="padding: 0">$${producto.precio1}</span></p>
@@ -682,7 +672,7 @@ function agregarProductos(seleccionados) {
                         <ion-icon class="resta-btn" id="resta-${producto.id}" name="remove-outline"></ion-icon>
                         <p class="txtCont" id="txt-${producto.id}"> 0 </p>
             </div>
-            <div class="casilla-add" name="add-btn-${producto.id}">
+            <div class="casilla-add" id="${producto.id}">
                         <ion-icon class="suma-btn" id="suma-${producto.id}" name="add-outline"></ion-icon>
             </div>
         `;
@@ -690,20 +680,16 @@ function agregarProductos(seleccionados) {
 
         contenedorProductos.appendChild(div);
     })
+
+    actualizarBotones();
 }
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener('click', (e) => {
-        if(e.currentTarget.id === 'pizzas' || e.currentTarget.id === 'veganas'){
-
-        }else{
-
-        }
         seccionProductos.style.display = 'inherit';
 
         const productoCategoria = productos.find(producto => producto.categoria.id == e.currentTarget.id) //Trae el objeto que cumpla con esa condición
 
-        console.log(productoCategoria.categoria.nombre);
         tituloCategoriaContenedor.innerText = productoCategoria.categoria.nombre;
 
         const btnCategoria = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
@@ -713,9 +699,42 @@ botonesCategorias.forEach(boton => {
     })
 }) 
 
-/* const btnPizzas = document.getElementById('pizzas');
+//Actualizar botones: eso es para que se almacenen los respectivos botones de la categoría seleccionada, solo de esa categoría.
+function actualizarBotones() {
+    botonesAgregar = document.querySelectorAll('.casilla-add');
 
-btnPizzas.addEventListener('click', ()=>{
-    contenedorProductos.style.display = 'inherit'
-    agregarProductos();
-}) */
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener('click', agregarAlCarrito);
+    })
+}
+
+const productosEnCarrito = [];
+
+function agregarAlCarrito(e) {
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+
+    
+    //Aumentar la cantidad
+    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+        productoAgregado.cantidad++;
+    } else{
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado);
+    }
+    //Actualizar el numerito
+    actualizarNumerito()    
+    //Hay que mandarlo al LocalStorage
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+}
+
+function actualizarNumerito() {
+    if(numerito != 0){
+        numerito.style.display = 'flex';
+    }else {
+        numerito.style.display = 'none';
+    }
+    let numeroCarro = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerText = numeroCarro;
+}
+
