@@ -6,7 +6,7 @@
     justify-content: start;
     align-items: center;
     #titulo-categoria{
-        color: rgba(83, 83, 83, 0.2);
+        color: $gris-transparente;
         text-transform: uppercase;
         font-family: 'Oswald';
         font-size: 45px;
@@ -33,7 +33,7 @@
         min-height: $tamObj;
         padding: $pad-15;
 
-        background-color: rgb(12, 11, 11);
+        background-color: rgb(8, 8, 8);
         color: rgb(255, 255, 255);
         padding-left: $pad-20;
         border-top-left-radius: 10px;
@@ -54,6 +54,13 @@
                 padding-left: $pad-15;
                 color: $rojo;
             }
+        }
+        .indicacion-pizzas{
+            font-size: 10px;
+            color: rgba(128, 128, 128, 0.644);
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
         }
         .ingredientes li{
             text-transform: capitalize;

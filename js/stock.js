@@ -615,8 +615,11 @@ const seccionProductos = document.getElementById('muestra-productos');
 const contenedorProductos = document.getElementById('contenedor-productos');
 const botonesCategorias = document.querySelectorAll('.contenedor');
 const tituloCategoriaContenedor = document.getElementById('titulo-categoria');
+
 let botonesAgregar = document.querySelectorAll('.casilla-add');
+let botonesQuitar = document.querySelectorAll('.resta-btn');
 const numerito = document.querySelector('#numerito');
+let contadores = [];
 
 //Guardo en un array, la lista de ingredientes
 
@@ -630,10 +633,11 @@ function agregarProductos(seleccionados) {
         div.classList.add('box-producto');
         if(producto.categoria.id == 'pizzas' || producto.categoria.id == 'veganas'){
             div.innerHTML = `
-            <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
+                <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
                 <div class="casilla-info">
-                            <h2 class="nombre">${producto.nombre}</h2>
+                        <h2 class="nombre">${producto.nombre}</h2>
                         <p class="precio">$${producto.precio1} <span>$${producto.precio2}</span></p>
+                        <div class="indicacion-pizzas"><p>2 Porc.</p> / <p>8 Porc.</p></div>
                         <ul class="ingredientes" id="lista-ingredientes">
                             <li>${producto.ingredientes[0]}</li>
                             <li>${producto.ingredientes[1]}</li>
@@ -650,23 +654,23 @@ function agregarProductos(seleccionados) {
                 <div class="casilla-add" id="${producto.id}">
                             <ion-icon class="suma-btn" id="suma-${producto.id}" name="add-outline"></ion-icon>
                 </div>
-            `;
-        }else{
-            div.innerHTML = `
-            <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
-            <div class="casilla-info">
+                `;
+        }else {
+                div.innerHTML = `
+                <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
+                <div class="casilla-info">
                         <h2 class="nombre">${producto.nombre}</h2>
-                    <p class="precio"><span style="padding: 0">$${producto.precio1}</span></p>
-                    <ul class="ingredientes" id="lista-ingredientes">
-                    <li>${producto.ingredientes[0]}</li>
-                    <li>${producto.ingredientes[1]}</li>
-                    <li>${producto.ingredientes[2]}</li>
-                    <li>${producto.ingredientes[3]}</li>
-                    <li>${producto.ingredientes[4]}</li>
-                    <li>${producto.ingredientes[5]}</li>
-                    <li>${producto.ingredientes[6]}</li>
-                    </ul>
-            </div>
+                        <p class="precio"><span style="padding: 0">$${producto.precio1}</span></p>
+                        <ul class="ingredientes" id="lista-ingredientes">
+                            <li>${producto.ingredientes[0]}</li>
+                            <li>${producto.ingredientes[1]}</li>
+                            <li>${producto.ingredientes[2]}</li>
+                            <li>${producto.ingredientes[3]}</li>
+                            <li>${producto.ingredientes[4]}</li>
+                            <li>${producto.ingredientes[5]}</li>
+                            <li>${producto.ingredientes[6]}</li>
+                        </ul>
+                </div>
                     
             <div class="contador" id="contador-${producto.id}">
                         <ion-icon class="resta-btn" id="resta-${producto.id}" name="remove-outline"></ion-icon>
@@ -675,7 +679,7 @@ function agregarProductos(seleccionados) {
             <div class="casilla-add" id="${producto.id}">
                         <ion-icon class="suma-btn" id="suma-${producto.id}" name="add-outline"></ion-icon>
             </div>
-        `;
+            `;
         }
 
         contenedorProductos.appendChild(div);
@@ -683,7 +687,7 @@ function agregarProductos(seleccionados) {
 
     actualizarBotones();
 }
-
+//Titulo de las categorias al apretar el botón
 botonesCategorias.forEach(boton => {
     boton.addEventListener('click', (e) => {
         seccionProductos.style.display = 'inherit';
@@ -702,19 +706,47 @@ botonesCategorias.forEach(boton => {
 //Actualizar botones: eso es para que se almacenen los respectivos botones de la categoría seleccionada, solo de esa categoría.
 function actualizarBotones() {
     botonesAgregar = document.querySelectorAll('.casilla-add');
+    botonesQuitar = document.querySelectorAll('.resta-btn');
 
     botonesAgregar.forEach(boton => {
         boton.addEventListener('click', agregarAlCarrito);
     })
+
+    botonesQuitar.forEach(boton => {
+        boton.addEventListener('click', quitarDelCarrito);
+    })
+    /* 
+    actualizarCantidad(); */
 }
 
 const productosEnCarrito = [];
 
+let index = 0;
+
+function quitarDelCarrito(e) {
+    //console.log(e.currentTarget)
+    const boxContador = e.currentTarget.parentNode
+    const boxAgregar = boxContador.nextSibling.nextSibling;
+    const productoARemover = productos.find(producto => producto.id === boxAgregar.id);
+    
+    //Disminuir la cantidad
+    if(productosEnCarrito.some(producto => producto.id === boxAgregar.id)) {
+        productoARemover.cantidad--;
+        boxContador.lastElementChild.innerText = productoARemover.cantidad;
+        
+        if(productoARemover.cantidad === 0){
+            boxContador.style.display = 'none'
+        }
+    } 
+
+    actualizarNumerito();
+}
+
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
+
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
-    
     //Aumentar la cantidad
     if(productosEnCarrito.some(producto => producto.id === idBoton)) {
         productoAgregado.cantidad++;
@@ -722,19 +754,27 @@ function agregarAlCarrito(e) {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }
+
+    if(productoAgregado.cantidad > 0){
+        const contador = e.currentTarget.previousSibling.previousSibling;
+        contador.lastElementChild.innerText = productoAgregado.cantidad;
+        contador.style.display = 'flex';
+    } 
     //Actualizar el numerito
-    actualizarNumerito()    
+    actualizarNumerito();    
     //Hay que mandarlo al LocalStorage
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
+
 function actualizarNumerito() {
-    if(numerito != 0){
-        numerito.style.display = 'flex';
-    }else {
-        numerito.style.display = 'none';
-    }
     let numeroCarro = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    numerito.innerText = numeroCarro;
+
+    if(numeroCarro === 0){
+        numerito.style.display = 'none';
+    } else {
+        numerito.style.display = 'flex';
+        numerito.innerText = numeroCarro;
+    }
 }
 
