@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./scss/ico/pizza.png">
     <title>Napoli House | Pedido</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -18,75 +19,46 @@
         </nav>
         <main>
             <h1>Napoli house</h1>
-            <div class="contenedor-carro">
-                
-            <div class="contenedor-ticket">
-    
-                <h2>Napoli House</h2>
-                <p class="ticket-info-empresa">Dirección: Esquina de Olessio y Moreno</p>
-                <p class="ticket-info-empresa">Tel: 3482123456</p>
-    
-                <hr>
-                <h3>tu pedido a la orden!</h3>
-                <hr>
-                
-    
-                <table id="tabla-pedido">
-                    <thead>
-                        <tr>
-                            <th class="iz" scope="col">Descripción</th>
-                            <th scope="col">Cant.</th>
-                            <th class="dr" scope="col">Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabla-body">
-                        <!-- Se completa con JS -->
-                        <tr id="producto-uno">
-                            <td class="iz" >
-                                <img class="pedido-iconos" src="./scss/ico/porcion-de-pizza.svg" alt=""> Pepperoni
-                            </td>
-                            <td>2</td>
-                            <td class="dr" >$2200</td>
-                        </tr>
-                        <tr id="producto-dos">
-                            <td class="iz" >
-                                <img class="pedido-iconos" src="./scss/ico/hamburger.svg" alt="">
-                                Chuck Norris</td>
-                            <td>1</td>
-                            <td class="dr" >$1300</td>
-                        </tr>
-                        <tr id="producto-tres">
-                            <td class="iz" >
-                                <img class="pedido-iconos" src="./scss/ico/sandwich.svg" alt="">
-                                Triple de pollo</td>
-                            <td>3</td>
-                            <td class="dr" >$2400</td>
-                        </tr>
-                        <tr id="producto-cuatro">
-                            <td class="iz" >
-                                <img class="pedido-iconos" src="./scss/ico/drink-alt.svg" alt="">
-                                Coca-cola</td>
-                            <td>1</td>
-                            <td class="dr" >$500</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr class="dot-line">
-                            <td class="iz total" scope="row">Total</th>
-                            <td class="dr precio" colspan="2">$<span>6400</span></td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <hr>
-                <p class="advertencia">No válido como ticket</p>
-                <hr>
-                
-                <p class="thx">Gracias!</p>
-                
-            </div>
-            <div class="boton-volver">
-    
-            </div>
+            <div class="contenedor-carro">  
+                <div class="contenedor-ticket">
+        
+                    <h2>Napoli House</h2>
+                    <p class="ticket-info-empresa">Dirección: Esquina de Olessio y Moreno</p>
+                    <p class="ticket-info-empresa">Tel: 3482123456</p>
+        
+                    <hr>
+                    <h3>tu pedido a la orden!</h3>
+                    <hr>
+                    
+        
+                    <table id="tabla-pedido">
+                        <thead>
+                            <tr>
+                                <th class="iz" scope="col">Descripción</th>
+                                <th scope="col">Cant.</th>
+                                <th class="dr" scope="col">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-body">
+                            <!-- Se completa con JS -->
+                        </tbody>
+                        <tfoot>
+                            <tr class="dot-line">
+                                <td class="iz total" scope="row">Total</th>
+                                <td class="dr precio" colspan="2">$<span>0</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <hr>
+                    <p class="advertencia">No válido como ticket</p>
+                    <hr>
+                    
+                    <p class="thx">Gracias!</p>
+                    
+                </div>
+                <div class="sin-pedido">
+                    Todavía no hiciste un pedido <ion-icon name="sad-outline"></ion-icon>
+                </div>
             </div>
             
         </main>
@@ -108,5 +80,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 </html>

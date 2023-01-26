@@ -719,9 +719,18 @@ function actualizarBotones() {
     actualizarCantidad(); */
 }
 
-const productosEnCarrito = [];
+let productosEnCarrito;
 
-let index = 0;
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+
+if (productosEnCarritoLS) {
+    productosEnCarrito = productosEnCarritoLS;
+    actualizarNumerito();
+} else {
+    productosEnCarrito = [];
+}
+
+/* let index = 0; */
 
 function quitarDelCarrito(e) {
     //console.log(e.currentTarget)
@@ -733,7 +742,7 @@ function quitarDelCarrito(e) {
     if(productosEnCarrito.some(producto => producto.id === boxAgregar.id)) {
         productoARemover.cantidad--;
         boxContador.lastElementChild.innerText = productoARemover.cantidad;
-        
+
         if(productoARemover.cantidad === 0){
             boxContador.style.display = 'none'
         }

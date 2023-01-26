@@ -455,7 +455,7 @@ body {
     padding: 20px 0; }
     .body-contenedor .contenedor-carro .contenedor-ticket {
       background-color: #e4e3e3;
-      display: flex;
+      display: none;
       justify-content: start;
       align-items: center;
       flex-direction: column;
@@ -512,6 +512,17 @@ body {
         text-align: left; }
       .body-contenedor .contenedor-carro .contenedor-ticket .dr {
         text-align: right; }
+    .body-contenedor .contenedor-carro .sin-pedido {
+      color: #a8a8a8;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: capitalize; }
+      .body-contenedor .contenedor-carro .sin-pedido ion-icon {
+        width: 20px;
+        height: 20px;
+        padding: 5px; }
   .body-contenedor .navegador-carrito {
     background-color: white;
     width: 40px;

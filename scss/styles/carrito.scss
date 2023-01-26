@@ -11,7 +11,7 @@
         
         .contenedor-ticket{
             background-color: rgb(228, 227, 227);
-            display: flex;
+            display: none;
             justify-content: start;
             align-items: center;
             flex-direction: column;
@@ -88,6 +88,19 @@
             }
             .dr{
                 text-align: right;
+            }
+        }
+        .sin-pedido{
+            color: $gris;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            ion-icon{
+                width: 20px;
+                height: 20px;
+                padding: 5px;
             }
         }
     }
