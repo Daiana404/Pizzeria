@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./scss/ico/pizza.png">
+    <link rel="shortcut icon" href="./scss/ico/icon-pizza.png">
     <title>Napoli House | Pedido</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,7 +15,7 @@
     </div>
     <div class="body-contenedor">
         <nav class="navegador-carrito">
-            <a href="./index.html"><ion-icon name="arrow-back-outline"></ion-icon></a>
+            <a href="./index.html#categorias"><ion-icon name="arrow-back-outline"></ion-icon></a>
         </nav>
         <main>
             <h1>Napoli house</h1>
@@ -56,6 +56,11 @@
                     <p class="thx">Gracias!</p>
                     
                 </div>
+                <div id="eliminar-pedido" class="eliminar-pedido">
+                    <div>
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </div>
+                </div>
                 <div class="sin-pedido">
                     Todavía no hiciste un pedido <ion-icon name="sad-outline"></ion-icon>
                 </div>
@@ -63,23 +68,23 @@
             
         </main>
     
-        <footer id="pie">
-            <div class="copyright">© copyright by napoli house</div>
-            <div>
-                <a href="index.html">inicio</a> <a href="./index.html#categorias">menu</a>
-                <a href="#">napoli music</a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/napolihousee/"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a href="https://www.facebook.com/napolipizzeriaa"><ion-icon name="logo-facebook"></ion-icon></a>
-            </div>
-            <div class="creditos">desarrollado por<a href="https://www.instagram.com/daia_polo/?next=%2F">Polo Daiana</a></div>
-        </footer>
     </div>
+    <footer class="pie-carrito" id="pie">
+        <div class="copyright">© copyright by napoli house</div>
+        <div>
+            <a href="index.html">inicio</a> <a href="./index.html#categorias">menu</a>
+            <a href="#">napoli music</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/napolihousee/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="https://www.facebook.com/napolipizzeriaa"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        <div class="creditos">desarrollado por<a href="https://www.instagram.com/daia_polo/?next=%2F">Polo Daiana</a></div>
+    </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./js/carrito.js"></script>
+    <script src="./js/carrito-productos.js"></script>
 </body>
 </html>

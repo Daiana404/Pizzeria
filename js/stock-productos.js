@@ -5,7 +5,7 @@ const productos = [
         id: "pepperoni",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Pepperoni', '', '', ''],
+        ingredientes: ['Muzza', 'Pepperoni'],
         img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
@@ -17,7 +17,7 @@ const productos = [
         id: "agridulce",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Ananá', 'Cereza', '', ''],
+        ingredientes: ['Muzza', 'Ananá', 'Cereza'],
         img: './scss/img/pizzas/agridulce.png',
         categoria: {
             nombre: 'Pizzas',
@@ -41,7 +41,7 @@ const productos = [
         id: "caprese",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Muzza', 'Tomates', 'Ajo', 'Albahaca', ''],
+        ingredientes: ['Muzza', 'Tomates', 'Ajo', 'Albahaca'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -53,7 +53,7 @@ const productos = [
         id: "chuck-norris",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Bacón', 'Alioli', 'Perejil', ''],
+        ingredientes: ['Muzza', 'Bacón', 'Alioli', 'Perejil'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -65,7 +65,7 @@ const productos = [
         id: "fugazzeta",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Muzza', 'Cebolla morada', 'Morrón', '', ''],
+        ingredientes: ['Muzza', 'Cebolla morada', 'Morrón'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -77,7 +77,7 @@ const productos = [
         id: "pollo-rojo",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Salsa roja', 'Pollo', '', ''],
+        ingredientes: ['Muzza', 'Salsa roja', 'Pollo'],
         img: './scss/img/pizzas/pollo-rojo.png',
         categoria: {
             nombre: 'Pizzas',
@@ -101,7 +101,7 @@ const productos = [
         id: "vellorita",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Muzza', 'Jamón', 'Huevo', 'Morrón', ''],
+        ingredientes: ['Muzza', 'Jamón', 'Huevo', 'Morrón'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -113,7 +113,7 @@ const productos = [
         id: "anchoas",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Anchoas', 'Aceitunas negras', '', ''],
+        ingredientes: ['Muzza', 'Anchoas', 'Aceitunas negras'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -125,7 +125,7 @@ const productos = [
         id: "cherry-y-pesto",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Muzza', 'Tomates cherry', 'Pesto', '', ''],
+        ingredientes: ['Muzza', 'Tomates cherry', 'Pesto'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -137,7 +137,7 @@ const productos = [
         id: "4-quesos",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone', ''],
+        ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -149,7 +149,7 @@ const productos = [
         id: "giuliani",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Trozos de queso brie', 'Albahaca', '', '', '', ''],
+        ingredientes: ['Trozos de queso brie', 'Albahaca'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -161,7 +161,7 @@ const productos = [
         id: "napoli",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Muzza', 'Cheddar', 'Pollo', 'Salsa barbacoa', ''],
+        ingredientes: ['Muzza', 'Cheddar', 'Pollo', 'Salsa barbacoa'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas',
@@ -211,7 +211,7 @@ const productos = [
         id: "comun-vegan",
         precio1: 800,
         precio2: 3100,
-        ingredientes: ['Queso vegano', '', '', '', ''],
+        ingredientes: ['Queso vegano'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -223,7 +223,7 @@ const productos = [
         id: "cherry-y-pesto-vegan",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto', '', ''],
+        ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -235,7 +235,7 @@ const productos = [
         id: "rucula-vegan",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Queso vegano', 'Rúcula', 'Tomates cherry', 'Aceite de oliva', ''],
+        ingredientes: ['Queso vegano', 'Rúcula', 'Tomates cherry', 'Aceite de oliva'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -247,7 +247,7 @@ const productos = [
         id: "caprese-vegan",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto', '', ''],
+        ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -259,7 +259,7 @@ const productos = [
         id: "fugazzeta-vegan",
         precio1: 1100,
         precio2: 4200,
-        ingredientes: ['Queso vegano', 'Cebolla morada', '', '', ''],
+        ingredientes: ['Queso vegano', 'Cebolla morada'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -271,7 +271,7 @@ const productos = [
         id: "texana-vegan",
         precio1: 1000,
         precio2: 3800,
-        ingredientes: ['Queso vegano', 'Salsa picante', 'Ají', '', ''],
+        ingredientes: ['Queso vegano', 'Salsa picante', 'Ají'],
         img: './scss/img/pizzas/pizza.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -285,7 +285,7 @@ const productos = [
         nombre: "Agridulce",
         id: "agridulce-hamburguesa",
         precio1: 1200,
-        ingredientes: ['Bife', 'Ananá', 'Rúcula', 'Salsa Napoli golf', '', '', ''],
+        ingredientes: ['Bife', 'Ananá', 'Rúcula', 'Salsa Napoli golf'],
         img: './scss/img/hamburguesas/hamburguesa.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -296,7 +296,7 @@ const productos = [
         nombre: "Chuck Norris",
         id: "chuck-norris-hamburguesa",
         precio1: 1300,
-        ingredientes: ['Bife x 2', 'Ketchup casero', 'Cheddar', 'Cebolla caramelizada', 'Bacón', '', ''],
+        ingredientes: ['Bife x 2', 'Ketchup casero', 'Cheddar', 'Cebolla caramelizada', 'Bacón'],
         img: './scss/img/hamburguesas/chuck-norris.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -307,7 +307,7 @@ const productos = [
         nombre: "Especial",
         id: "especial-hamburguesa",
         precio1: 1100,
-        ingredientes: ['Bife', 'Queso', 'Jamón', 'Huevo', 'Tomate', 'Lechuga', ''],
+        ingredientes: ['Bife', 'Queso', 'Jamón', 'Huevo', 'Tomate', 'Lechuga'],
         img: './scss/img/hamburguesas/especial.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -318,7 +318,7 @@ const productos = [
         nombre: "La gourmet",
         id: "la-gourmet-hamburguesa",
         precio1: 1300,
-        ingredientes: ['Bife x 2', 'Colchón de rúcula', 'Bacón', 'Queso parmesano/muzza/azul', 'Salsa Napoli golf', 'Lechuga',''],
+        ingredientes: ['Bife x 2', 'Colchón de rúcula', 'Bacón', 'Queso parmesano/muzza/azul', 'Salsa Napoli golf', 'Lechuga'],
         img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -329,7 +329,7 @@ const productos = [
         nombre: "Simple cheddar",
         id: "simple-cheddar-hamburguesa",
         precio1: 1100,
-        ingredientes: ['Bife', 'Cheddar', '', '', '', '', ''],
+        ingredientes: ['Bife', 'Cheddar'],
         img: './scss/img/hamburguesas/hamburguesa.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -340,7 +340,7 @@ const productos = [
         nombre: "Doble cheddar",
         id: "doble-cheddar-hamburguesa",
         precio1: 1300,
-        ingredientes: ['Bife x 2', 'Cheddar x 2', '', '', '', '', ''],
+        ingredientes: ['Bife x 2', 'Cheddar x 2'],
         img: './scss/img/hamburguesas/hamburguesa.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -351,7 +351,7 @@ const productos = [
         nombre: "Tapa arterias",
         id: "tapa-arterias-hamburguesa",
         precio1: 1500,
-        ingredientes: ['Bife x 3', 'Cheddar x 3', 'Bacón x 3', 'ketchuo casero', '', '', ''],
+        ingredientes: ['Bife x 3', 'Cheddar x 3', 'Bacón x 3', 'ketchuo casero'],
         img: './scss/img/hamburguesas/tapa-arterias.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -362,7 +362,7 @@ const productos = [
         nombre: "Big house",
         id: "big-house-hamburguesa",
         precio1: 1300,
-        ingredientes: ['Bife x 2', 'Cebolla caramelizada', 'Bacón', 'Cheddar', 'Pepinillos', 'Lechuga repollada', ''],
+        ingredientes: ['Bife x 2', 'Cebolla caramelizada', 'Bacón', 'Cheddar', 'Pepinillos', 'Lechuga repollada'],
         img: './scss/img/hamburguesas/hamburguesa.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -373,7 +373,7 @@ const productos = [
         nombre: "La blanca",
         id: "la-blanca-hamburguesa",
         precio1: 1200,
-        ingredientes: ['Bife', 'Jamón', 'Cheddar', 'Salsa blanca', 'Verdeo', 'Salsa Napoli golf', ''],
+        ingredientes: ['Bife', 'Jamón', 'Cheddar', 'Salsa blanca', 'Verdeo', 'Salsa Napoli golf'],
         img: './scss/img/hamburguesas/la-blanca.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -384,7 +384,7 @@ const productos = [
         nombre: "La de napoli",
         id: "la-de-napoli-hamburguesa",
         precio1: 1300,
-        ingredientes: ['Bife x 2', 'Emental', 'Pepperoni', '', '', '', ''],
+        ingredientes: ['Bife x 2', 'Emental', 'Pepperoni'],
         img: './scss/img/hamburguesas/hamburguesa.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -406,7 +406,7 @@ const productos = [
         nombre: "Tradicional",
         id: "tradicional-hamburguesa",
         precio1: 1000,
-        ingredientes: ['Bife', 'Queso', 'Lechuga', 'Tomate', 'Aderezos', '', ''],
+        ingredientes: ['Bife', 'Queso', 'Lechuga', 'Tomate', 'Aderezos'],
         img: './scss/img/hamburguesas/hamburguesa.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -420,7 +420,7 @@ const productos = [
         nombre: "Simples",
         id: "simples-papas",
         precio1: 800,
-        ingredientes: ['Las clásicas de siempre', '', '', '', '', '', ''],
+        ingredientes: ['Las clásicas de siempre'],
         img: './scss/img/papas-fritas/simples.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -431,7 +431,7 @@ const productos = [
         nombre: "Gratinadas",
         id: "gratinadas-papas",
         precio1: 1000,
-        ingredientes: ['Queso', '', '', '', '', '', ''],
+        ingredientes: ['Queso'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -442,7 +442,7 @@ const productos = [
         nombre: "Con cheddar",
         id: "con-cheddar-papas",
         precio1: 1000,
-        ingredientes: ['Cheddar', '', '', '', '', '', ''],
+        ingredientes: ['Cheddar'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -453,7 +453,7 @@ const productos = [
         nombre: "Con cheddar y panceta",
         id: "con-cheddar-y-panceta-papas",
         precio1: 800,
-        ingredientes: ['Cheddar', 'Panceta', '', '', '', '', ''],
+        ingredientes: ['Cheddar', 'Panceta'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -464,7 +464,7 @@ const productos = [
         nombre: "4 quesos",
         id: "4-quesos-papas",
         precio1: 1200,
-        ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone', '', '', ''],
+        ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone'],
         img: './scss/img/papas-fritas/4-quesos.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -475,7 +475,7 @@ const productos = [
         nombre: "Azulada",
         id: "azulada-papas",
         precio1: 1000,
-        ingredientes: ['Queso azul', '', '', '', '', '', ''],
+        ingredientes: ['Queso azul'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -486,7 +486,7 @@ const productos = [
         nombre: "Al verdeo",
         id: "al-verdeo-papas",
         precio1: 1000,
-        ingredientes: ['Cebolla de verdeo', '', '', '', '', '', ''],
+        ingredientes: ['Cebolla de verdeo'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -495,9 +495,9 @@ const productos = [
     },
     {
         nombre: "Texanas",
-        id: "simples-papas",
+        id: "texanas-papas",
         precio1: 1000,
-        ingredientes: ['Bacón', 'Salsa picante', 'Ají', '', '', '', ''],
+        ingredientes: ['Bacón', 'Salsa picante', 'Ají'],
         img: './scss/img/papas-fritas/texanas.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -508,7 +508,7 @@ const productos = [
         nombre: "Alioli",
         id: "alioli-papas",
         precio1: 900,
-        ingredientes: ['Alioli', '', '', '', '', '', ''],
+        ingredientes: ['Alioli'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -519,9 +519,9 @@ const productos = [
     
     {
         nombre: "Carlitos",
-        id: "carlitos",
+        id: "carlitos-sandwich",
         precio1: 600,
-        ingredientes: ['Mayonesa', 'Jamón', 'Queso', '', '', '', ''],
+        ingredientes: ['Mayonesa', 'Jamón', 'Queso'],
         img: './scss/img/sandwiches/carlitos.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -530,9 +530,9 @@ const productos = [
     },
     {
         nombre: "A la mostaza",
-        id: "a-la-mostaza",
+        id: "a-la-mostaza-sandwich",
         precio1: 1600,
-        ingredientes: ['Pechuga de pollo a la mostaza', 'Tomate asado', 'Rúcula', 'Parmesano', '', '', ''],
+        ingredientes: ['Pechuga de pollo a la mostaza', 'Tomate asado', 'Rúcula', 'Parmesano'],
         img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -541,9 +541,9 @@ const productos = [
     },
     {
         nombre: "Lomo cheddar",
-        id: "lomo-cheddar",
+        id: "lomo-cheddar-sandwich",
         precio1: 1600,
-        ingredientes: ['Lomito', 'Cheddar', 'Cebolla caramelizada', 'Rúcula', 'Tomate asado', '', ''],
+        ingredientes: ['Lomito', 'Cheddar', 'Cebolla caramelizada', 'Rúcula', 'Tomate asado'],
         img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -552,9 +552,9 @@ const productos = [
     },
     {
         nombre: "Triple de pollo",
-        id: "triple-de-pollo",
+        id: "triple-de-pollo-sandwich",
         precio1: 800,
-        ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Pollo', ''],
+        ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Pollo'],
         img: './scss/img/sandwiches/triple-de-pollo.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -563,9 +563,9 @@ const productos = [
     },
     {
         nombre: "Tostado triple",
-        id: "tostado-triple",
+        id: "tostado-triple-sandwich",
         precio1: 700,
-        ingredientes: ['Manteca', 'Jamón', 'Queso','', '', '', '', ''],
+        ingredientes: ['Manteca', 'Jamón', 'Queso'],
         img: './scss/img/sandwiches/tostado-triple.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -576,7 +576,7 @@ const productos = [
         nombre: "Napoli",
         id: "napoli-sandwich",
         precio1: 1600,
-        ingredientes: ['Pan de la casa', 'Pollo', 'Cebolla morada', 'Barbacoa', 'Cheddar', 'Tomate asado', ''],
+        ingredientes: ['Pan de la casa', 'Pollo', 'Cebolla morada', 'Barbacoa', 'Cheddar', 'Tomate asado'],
         img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -585,9 +585,9 @@ const productos = [
     },
     {
         nombre: "Lomo especial",
-        id: "lomo-especial",
+        id: "lomo-especial-sandwich",
         precio1: 1600,
-        ingredientes: ['Lomito', 'Pan de la casa', 'Queso', 'Jamón', 'Lechuga', 'Tomate', ''],
+        ingredientes: ['Lomito', 'Pan de la casa', 'Queso', 'Jamón', 'Lechuga', 'Tomate'],
         img: './scss/img/sandwiches/lomito.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -596,9 +596,9 @@ const productos = [
     },
     {
         nombre: "Triple de verdura",
-        id: "triple-de-verdura",
+        id: "triple-de-verdura-sandwich",
         precio1: 750,
-        ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Huevo', ''],
+        ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Huevo'],
         img: './scss/img/sandwiches/triple-de-verdura.png',
         categoria: {
             nombre: 'Sandwiches',
@@ -611,183 +611,199 @@ const productos = [
 
 ]
 
+//Mostrar productos
 const seccionProductos = document.getElementById('muestra-productos');
 const contenedorProductos = document.getElementById('contenedor-productos');
-
 const botonesCategorias = document.querySelectorAll('.contenedor');
-
 const tituloCategoriaContenedor = document.getElementById('titulo-categoria');
-
+//Agregar al carro
+let restaBotones = document.querySelectorAll('.resta-btn');
 let botonesAgregar = document.querySelectorAll('.casilla-add');
-let botonesQuitar = document.querySelectorAll('.resta-btn');
 const numerito = document.querySelector('#numerito');
-let contadores = [];
 
-//Guardo en un array, la lista de ingredientes
+let productosEnCarro = [];
 
-function agregarProductos(seleccionados) {
+const productosEnCarroLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
 
+if(productosEnCarroLS) {
+    productosEnCarro = productosEnCarroLS;
+    actualizarNumerito();
+} else {
+    productosEnCarro = [];
+}
+
+botonesCategorias.forEach(boton => {
+    boton.addEventListener('click', (e) => {
+        seccionProductos.style.display = 'inherit';
+        //Creo el array con los productos seleccionados
+        const productosSeleccionados = productos.filter(producto => producto.categoria.id === boton.id);
+
+        mostrarProductos(productosSeleccionados);
+
+        //Agrego el nombre de la categoria
+        tituloCategoriaContenedor.innerText = productosSeleccionados[0].categoria.nombre;
+
+        if(productosEnCarro.some(producto => producto.categoria.id === boton.id)){/* 
+            console.log('hay producto')
+            console.log(e.currentTarget.id) */
+        }
+    });
+})
+
+function mostrarProductos(seleccionados) {
     contenedorProductos.innerHTML = '';
-
+    
     seleccionados.forEach(producto => {
-        const div = document.createElement("div");
-        
+        const div = document.createElement('div');
         div.classList.add('box-producto');
-        
-        if(producto.categoria.id == 'pizzas' || producto.categoria.id == 'veganas'){
+        div.setAttribute("id", `box-${producto.id}`);
+
+        if(producto.categoria.id === 'pizzas' || producto.categoria.id === 'veganas') {
+            div.innerHTML = `
+            <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
+            <div class="casilla-info">
+                    <h2 class="nombre">${producto.nombre}</h2>
+                    <p class="precio">$${producto.precio1} <span>$${producto.precio2}</span></p>
+                    <div class="indicacion-pizzas"><p>2 Porc.</p> / <p>8 Porc.</p></div>
+                    <ul class="ingredientes" id="lista-${producto.id}">
+                    </ul>
+            </div>
+                    
+            <div class="casilla-contador" id="contador-${producto.id}">
+                        <ion-icon class="resta-btn" id="resta-${producto.id}" name="remove-outline"></ion-icon>
+                        <p class="txtCont" id="txt-${producto.id}"> 0 </p>
+            </div>
+
+            <div class="casilla-add" id="suma-${producto.id}">
+                        <ion-icon class="suma-btn" name="add-outline"></ion-icon>
+            </div>
+            `;
+        } else {
             div.innerHTML = `
                 <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
                 <div class="casilla-info">
                         <h2 class="nombre">${producto.nombre}</h2>
-                        <p class="precio">$${producto.precio1} <span>$${producto.precio2}</span></p>
-                        <div class="indicacion-pizzas"><p>2 Porc.</p> / <p>8 Porc.</p></div>
-                        <ul class="ingredientes" id="lista-ingredientes">
-                            <li>${producto.ingredientes[0]}</li>
-                            <li>${producto.ingredientes[1]}</li>
-                            <li>${producto.ingredientes[2]}</li>
-                            <li>${producto.ingredientes[3]}</li>
-                            <li>${producto.ingredientes[4]}</li>
-                        </ul>
-                </div>
-                        
-                <div class="contador" id="contador-${producto.id}">
-                            <ion-icon class="resta-btn" id="resta-${producto.id}" name="remove-outline"></ion-icon>
-                            <p class="txtCont" id="txt-${producto.id}"> 0 </p>
-                </div>
-                <div class="casilla-add" id="${producto.id}">
-                            <ion-icon class="suma-btn" id="suma-${producto.id}" name="add-outline"></ion-icon>
-                </div>
-                `;
-        }else {
-                div.innerHTML = `
-                <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
-                <div class="casilla-info">
-                        <h2 class="nombre">${producto.nombre}</h2>
                         <p class="precio"><span style="padding: 0">$${producto.precio1}</span></p>
-                        <ul class="ingredientes" id="lista-ingredientes">
-                            <li>${producto.ingredientes[0]}</li>
-                            <li>${producto.ingredientes[1]}</li>
-                            <li>${producto.ingredientes[2]}</li>
-                            <li>${producto.ingredientes[3]}</li>
-                            <li>${producto.ingredientes[4]}</li>
-                            <li>${producto.ingredientes[5]}</li>
-                            <li>${producto.ingredientes[6]}</li>
+                        <ul class="ingredientes" id="lista-${producto.id}">
                         </ul>
                 </div>
                     
-            <div class="contador" id="contador-${producto.id}">
+            <div class="casilla-contador" id="contador-${producto.id}">
                         <ion-icon class="resta-btn" id="resta-${producto.id}" name="remove-outline"></ion-icon>
                         <p class="txtCont" id="txt-${producto.id}"> 0 </p>
             </div>
-            <div class="casilla-add" id="${producto.id}">
-                        <ion-icon class="suma-btn" id="suma-${producto.id}" name="add-outline"></ion-icon>
+            <div class="casilla-add" id="suma-${producto.id}">
+                        <ion-icon class="suma-btn" name="add-outline"></ion-icon>
             </div>
             `;
+
         }
-
         contenedorProductos.appendChild(div);
-    })
 
-    actualizarBotones();
+        cargarIngredientes(producto);
+    })
+    boxProductos = document.querySelectorAll('.box-producto');
+    recargarBotones();
 }
-//Titulo de las categorias al apretar el botón
-botonesCategorias.forEach(boton => {
-    boton.addEventListener('click', (e) => {
-        seccionProductos.style.display = 'inherit';
-        
-        const productoCategoria = productos.find(producto => producto.categoria.id == e.currentTarget.id) //Trae el objeto que cumpla con esa condición
 
-        tituloCategoriaContenedor.innerText = productoCategoria.categoria.nombre;
-
-        const btnCategoria = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-
-        agregarProductos(btnCategoria);
-
-    })
-}) 
-
-//Actualizar botones: eso es para que se almacenen los respectivos botones de la categoría seleccionada, solo de esa categoría.
-function actualizarBotones() {
+function recargarBotones() {
     botonesAgregar = document.querySelectorAll('.casilla-add');
-    botonesQuitar = document.querySelectorAll('.resta-btn');
+    restaBotones = document.querySelectorAll('.resta-btn');
 
     botonesAgregar.forEach(boton => {
         boton.addEventListener('click', agregarAlCarrito);
     })
-
-    botonesQuitar.forEach(boton => {
-        boton.addEventListener('click', quitarDelCarrito);
+    restaBotones.forEach(boton => {
+        boton.addEventListener('click', eliminarDelCarro);
     })
-    /* 
-    actualizarCantidad(); */
-}
-
-let productosEnCarrito;
-
-const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
-
-if (productosEnCarritoLS) {
-    productosEnCarrito = productosEnCarritoLS;
-    actualizarNumerito();
-} else {
-    productosEnCarrito = [];
-}
-
-/* let index = 0; */
-
-function quitarDelCarrito(e) {
-    //console.log(e.currentTarget)
-    const boxContador = e.currentTarget.parentNode
-    const boxAgregar = boxContador.nextSibling.nextSibling;
-    const productoARemover = productosEnCarrito.find(producto => producto.id === boxAgregar.id);
     
-    //Disminuir la cantidad
-    if(productosEnCarrito.some(producto => producto.id === boxAgregar.id)) {
-        productoARemover.cantidad--;
-        
-        boxContador.lastElementChild.innerText = productoARemover.cantidad;
+    actualizarContadores()
+}
 
-        if(productoARemover.cantidad === 0){
-            boxContador.style.display = 'none';
-        }
-    } 
-
-    actualizarNumerito();
+function cargarIngredientes(producto) {
+    const lista = document.getElementById(`lista-${producto.id}`);
+    producto.ingredientes.forEach(ingrediente => {
+        const li = document.createElement('li');
+        li.innerText = ingrediente;
+        lista.appendChild(li);
+    })
 }
 
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
-
-    const productoAgregado = productos.find(producto => producto.id === idBoton);
-
-    //Aumentar la cantidad
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
-        productoAgregado.cantidad++;
-    } else{
-        productoAgregado.cantidad = 1;
-        productosEnCarrito.push(productoAgregado);
+    let productoSumado = productos.find(producto => `suma-${producto.id}` === idBoton);
+    if(productosEnCarro.some(producto => producto.id === productoSumado.id)){
+        productoSumado = productosEnCarro.find(producto => `suma-${producto.id}` === idBoton);
     }
 
-    if(productoAgregado.cantidad > 0){
-        const contador = e.currentTarget.previousSibling.previousSibling;
-        contador.lastElementChild.innerText = productoAgregado.cantidad;
-        contador.style.display = 'flex';
-    } 
-    //Actualizar el numerito
-    actualizarNumerito();    
-    //Hay que mandarlo al LocalStorage
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    const contador = e.currentTarget.previousSibling.previousSibling;
+    contador.style.display = 'flex';
+    const txt = contador.lastElementChild;
+
+    if(productosEnCarro.some(producto => producto.id === productoSumado.id)) {
+        productoSumado.cantidad++;
+    } else {
+        productoSumado.cantidad = 1;
+        productosEnCarro.push(productoSumado);
+    }
+    
+    txt.innerText = productoSumado.cantidad;
+    actualizarNumerito()
+    //Al localstorage
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarro));
 }
 
+function eliminarDelCarro(e) {
+    const restaBoton = e.currentTarget;
+    const productoRestado = productosEnCarro.find(producto => `resta-${producto.id}` === restaBoton.id);
+    const txt = restaBoton.nextSibling.nextSibling;
+    const boxContador = restaBoton.parentNode;
+    
+    const index = productosEnCarro.findIndex(producto => producto.id === productoRestado.id)
+    
+    if(productosEnCarro.some(producto => producto.id === productoRestado.id)){
+        productoRestado.cantidad--;
+    }
+    
+    if( productoRestado.cantidad === 0) {
+        boxContador.style.display = 'none';
+        productosEnCarro.splice(index, 1);
+    }
+    txt.innerText = productoRestado.cantidad; 
+
+    //Me imagino que sobreescribe los datos...
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarro));
+
+    actualizarNumerito();
+}
 
 function actualizarNumerito() {
-    let numeroCarro = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    let numeroCarro = productosEnCarro.reduce((acc, producto) => acc + producto.cantidad, 0);
 
-    if(numeroCarro === 0){
+    if(numeroCarro <= 0){
         numerito.style.display = 'none';
+        numerito.innerText = 0;
     } else {
         numerito.style.display = 'flex';
         numerito.innerText = numeroCarro;
     }
+}
+
+function actualizarContadores() {
+    const boxProductos = document.querySelectorAll('.box-producto');
+    
+
+    boxProductos.forEach(caja => {
+        if(productosEnCarro.find(producto => `box-${producto.id}` === caja.id)) {
+            const producto = productosEnCarro.find(producto => `box-${producto.id}` === caja.id)
+            const contador = caja.lastElementChild.previousElementSibling;
+            const txt = contador.lastElementChild;
+
+            //Mostrar el contador
+            contador.style.display = 'flex';
+            //Escribir la cantidad
+            txt.innerHTML = producto.cantidad;
+        }
+    })  
 }
 

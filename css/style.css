@@ -416,7 +416,7 @@ body {
       width: 20px; }
   .box-producto .casilla-add:active {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  .box-producto .contador {
+  .box-producto .casilla-contador {
     box-sizing: content-box;
     position: absolute;
     display: none;
@@ -432,19 +432,19 @@ body {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     font-size: 15px; }
-    .box-producto .contador .resta-btn {
+    .box-producto .casilla-contador .resta-btn {
       cursor: pointer;
       background-color: #afafaf;
       border-radius: 50%;
       width: 20px;
       height: 20px; }
-    .box-producto .contador .resta-btn:active {
+    .box-producto .casilla-contador .resta-btn:active {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-    .box-producto .contador p, .box-producto .contador #nosotros .grid .info div h4, #nosotros .grid .info div .box-producto .contador h4, .box-producto .contador #pie div #nosotros .grid .info a h4, #pie div #nosotros .grid .info a .box-producto .contador h4 {
+    .box-producto .casilla-contador p, .box-producto .casilla-contador #nosotros .grid .info div h4, #nosotros .grid .info div .box-producto .casilla-contador h4, .box-producto .casilla-contador #pie div #nosotros .grid .info a h4, #pie div #nosotros .grid .info a .box-producto .casilla-contador h4 {
       padding: 0 10px; }
 
 .body-contenedor {
-  position: relative; }
+  padding-bottom: 150px; }
   .body-contenedor .contenedor-carro {
     display: flex;
     justify-content: center;
@@ -459,7 +459,7 @@ body {
       justify-content: start;
       align-items: center;
       flex-direction: column;
-      min-width: 280px;
+      width: 280px;
       min-height: 350px;
       padding: 10px;
       padding-bottom: 35px;
@@ -523,11 +523,29 @@ body {
         width: 20px;
         height: 20px;
         padding: 5px; }
+    .body-contenedor .contenedor-carro .eliminar-pedido {
+      height: 37.5px;
+      width: 280px;
+      display: flex;
+      justify-content: end; }
+      .body-contenedor .contenedor-carro .eliminar-pedido div, .body-contenedor .contenedor-carro .eliminar-pedido #pie div a, #pie div .body-contenedor .contenedor-carro .eliminar-pedido a {
+        height: 100%;
+        width: 37.5px;
+        background-color: #c91905;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        .body-contenedor .contenedor-carro .eliminar-pedido div ion-icon, .body-contenedor .contenedor-carro .eliminar-pedido #pie div a ion-icon, #pie div .body-contenedor .contenedor-carro .eliminar-pedido a ion-icon {
+          width: 23px;
+          height: 23px;
+          color: #1a1a1a; }
   .body-contenedor .navegador-carrito {
     background-color: white;
     width: 40px;
     height: 40px;
-    position: fixed;
     border-bottom-right-radius: 10px; }
     .body-contenedor .navegador-carrito a {
       text-decoration: none;
@@ -552,6 +570,13 @@ body {
     text-transform: uppercase;
     font-family: 'Oswald';
     font-size: 45px; }
+
+body {
+  position: relative; }
+  body .pie-carrito {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
 
 @media only screen and (min-width: 450px) {
   .body-contenedor {

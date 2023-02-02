@@ -1,12 +1,12 @@
 .body-contenedor{
-    position: relative;
+    padding-bottom: $h-pie;
     .contenedor-carro{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        min-height: 600px;
+        min-height: 600px; 
         padding: $pad-20 0;
         
         .contenedor-ticket{
@@ -15,8 +15,8 @@
             justify-content: start;
             align-items: center;
             flex-direction: column;
-            min-width: 280px;
-            min-height: 350px;
+            width: $w-ticket;
+            min-height: $h-ticket;
             padding: $pad-10;
             padding-bottom: 35px;
             color: rgb(48, 48, 48);
@@ -103,13 +103,31 @@
                 padding: 5px;
             }
         }
+        .eliminar-pedido{
+            height: $h-mnav / 2;
+            width: $w-ticket;
+            display: flex;
+            justify-content: end;
+            div{
+                height: 100%;
+                width: $h-mnav / 2;
+                background-color: $rojo;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                display: flex;justify-content: center;align-items: center;
+                cursor: pointer;
+                ion-icon{
+                    width: 23px;
+                    height: 23px;
+                    color: $negro;
+                }
+            }
+        }
     }
     .navegador-carrito{
         background-color: white;
         width: 40px;
         height: 40px;
-        
-        position: fixed;
         border-bottom-right-radius: 10px;
         a{
             text-decoration: none;
@@ -138,5 +156,13 @@
         text-transform: uppercase;
         font-family: 'Oswald';
         font-size: 45px;
+    }
+}
+body{
+    position: relative;
+    .pie-carrito{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
