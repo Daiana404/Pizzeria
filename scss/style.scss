@@ -378,6 +378,9 @@ body{
 }
 
 #pie{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: $h-pie;
     display: flex;
     flex-direction: column;

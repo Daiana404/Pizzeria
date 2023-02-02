@@ -8,6 +8,7 @@ const total = document.getElementById('num-precio');
 
 const eliminarPedido = document.getElementById('eliminar-pedido');
 
+
 eliminarPedido.addEventListener('click', () => {
 
     localStorage.removeItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
@@ -87,6 +88,7 @@ if (productosEnCarrito){
 } else {
     contenedorTicket.style.display = 'none';
     msgSinPedido.style.display = 'inherit';
+    eliminarPedido.style.display = 'none';
 }
 
 
