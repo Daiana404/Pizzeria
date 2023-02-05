@@ -106,7 +106,7 @@
         .eliminar-pedido{
             height: $h-mnav / 2;
             width: $w-ticket;
-            display: none;
+            display: flex;
             justify-content: end;
             div{
                 height: 100%;
