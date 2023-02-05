@@ -19,6 +19,7 @@ eliminarPedido.addEventListener('click', () => {
 })
 
 if(productosEnCarrito.length === 0) {
+    console.log('concha')
     contenedorTicket.style.display = 'none';
     msgSinPedido.style.display = 'inherit';
     eliminarPedido.style.display = 'none';
