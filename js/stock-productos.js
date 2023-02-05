@@ -609,6 +609,62 @@ const productos = [
 
     ///////////////////////////Bebidas
 
+    {
+        nombre: "Martini",
+        id: "martini",
+        precio1: 550,
+        ingredientes: ['Martini', 'Jugo de un limón'],
+        img: './scss/img/bebidas/bebida-04.png',
+        categoria: {
+            nombre: 'Bebidas',
+            id: 'bebidas'
+        }
+    },
+    {
+        nombre: "Gin tonic rojo",
+        id: "gin-tonic",
+        precio1: 850,
+        ingredientes: ['Gin', 'Tónica', 'Frutos rojos'],
+        img: './scss/img/bebidas/bebida-05.png',
+        categoria: {
+            nombre: 'Bebidas',
+            id: 'bebidas'
+        }
+    },
+    {
+        nombre: "Coca-cola",
+        id: "coca-cola",
+        precio1: 550,
+        ingredientes: ['Coquita'],
+        img: './scss/img/bebidas/bebida-02.png',
+        categoria: {
+            nombre: 'Bebidas',
+            id: 'bebidas'
+        }
+    },
+    {
+        nombre: "Trago sorpresa",
+        id: "trago-sorpresa",
+        precio1: 850,
+        ingredientes: ['Ingredientes sorprendentes'],
+        img: './scss/img/bebidas/bebida-01.png',
+        categoria: {
+            nombre: 'Bebidas',
+            id: 'bebidas'
+        }
+    },
+    {
+        nombre: "Cerveza",
+        id: "cerveza",
+        precio1: 550,
+        ingredientes: ['Andes', 'Quilmes', 'Corona'],
+        img: './scss/img/bebidas/bebida-03.png',
+        categoria: {
+            nombre: 'Bebidas',
+            id: 'bebidas'
+        }
+    },
+
 ]
 
 //Mostrar productos
@@ -620,6 +676,8 @@ const tituloCategoriaContenedor = document.getElementById('titulo-categoria');
 let restaBotones = document.querySelectorAll('.resta-btn');
 let botonesAgregar = document.querySelectorAll('.casilla-add');
 const numerito = document.querySelector('#numerito');
+//Animación
+let imagenes = document.querySelectorAll('.img-articulo');
 
 let productosEnCarro = [];
 
@@ -704,6 +762,8 @@ function mostrarProductos(seleccionados) {
     })
     boxProductos = document.querySelectorAll('.box-producto');
     recargarBotones();
+    imagenes = document.querySelectorAll('.img-articulo');
+        moveImg()
 }
 
 function recargarBotones() {
@@ -805,5 +865,22 @@ function actualizarContadores() {
             txt.innerHTML = producto.cantidad;
         }
     })  
+}
+
+//Animación de las imágenes
+
+
+window.addEventListener('scroll', moveImg);
+
+function moveImg() {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    imagenes.forEach(img => {
+        const imgTop = img.getBoundingClientRect().top;
+        if(imgTop < triggerBottom) {
+            img.classList.add('show');
+        } else {
+            img.classList.remove('show');
+        }
+    })
 }
 

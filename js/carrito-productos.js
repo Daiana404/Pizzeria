@@ -18,7 +18,11 @@ eliminarPedido.addEventListener('click', () => {
     contenedorTicket.style.display = 'none';
 })
 
-if (productosEnCarrito){
+if(productosEnCarrito.length === 0) {
+    contenedorTicket.style.display = 'none';
+    msgSinPedido.style.display = 'inherit';
+    eliminarPedido.style.display = 'none';
+} else {
     eliminarPedido.style.display = 'flex';
     contenedorTicket.style.display = 'flex';
     msgSinPedido.style.display = 'none';
@@ -85,12 +89,7 @@ if (productosEnCarrito){
         }
         tablaBody.appendChild(tr);
     })
-} else {
-    contenedorTicket.style.display = 'none';
-    msgSinPedido.style.display = 'inherit';
-    eliminarPedido.style.display = 'none';
 }
-
 
 function precioPizzas(pizza){
     let accPizzaCompleta = 0;

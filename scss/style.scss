@@ -1,6 +1,7 @@
 @import './components/fuentes';
 @import './components/variables';
 @import './components/colores';
+@import './components/keyframe';
 html{
     scroll-behavior: smooth;
 }
@@ -148,7 +149,7 @@ body{
 }
 
 #inicio{
-    height: 100vh;
+    height: 85vh;
     position: relative;
     
     .inicio-promo{
@@ -177,8 +178,8 @@ body{
         width: 50vw;
     }
     .fondo{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: left;
         filter: brightness(0.6);
@@ -209,83 +210,86 @@ body{
     }
 }
 
-.box-slider{
-    width: 100%;
-    height: 350px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .wrapper{
-        max-width: 450px;
+#categorias{
+    position: relative;
+    .box-slider{
         width: 100%;
-        overflow-x: auto;
-        display: flex;
-        grid-gap: 20px;
-        padding-left: $pad-20;
-        padding-right: $pad-20;
-
-        scroll-snap-type: x;
-        scroll-behavior: smooth;
-        cursor: grab;
-
-        .content{
-            min-width: calc(70% - 5px);
-            aspect-ratio: 1 / 1;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            scroll-snap-align: center;
-            position: relative;
-            img{
-                width: 100%;height: 100%;object-fit: cover;
-                border-radius: 10px;
-                position: absolute;
-                filter: brightness(0.5);
-            }
-            .contenedor{
-                
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding: $pad-10;
-                    box-sizing: border-box;
-                    align-items: flex-start;
-                    color: white;
-                    text-decoration: none;
-                    
-                    text-align: center;
-
-                    font: normal 300 12px $opensans;
-                    h3{
-                        font: normal 600 25px $oswald;
-                        text-transform: uppercase;
-                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);/* 
-                        width: 80%; */
-                        text-align: left;
-                    }
-                    p{
-                        width: 90%;
-                        color: rgb(198, 198, 198);
-                        text-align: left;
-                    }
-                
-            }
-            
-            
-        }
+        height: 350px;
         
-         scrollbar-width: none; /* Firefox */
-    }
-    .wrapper::-webkit-scrollbar { /* Chrome */
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wrapper{
+            max-width: 450px;
+            width: 100%;
+            overflow-x: auto;
+            display: flex;
+            grid-gap: 20px;
+            padding-left: $pad-20;
+            padding-right: $pad-20;
+    
+            scroll-snap-type: x;
+            scroll-behavior: smooth;
+            cursor: grab;
+    
+            .content{
+                min-width: calc(70% - 5px);
+                aspect-ratio: 1 / 1;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                scroll-snap-align: center;
+                position: relative;
+                img{
+                    width: 100%;height: 100%;object-fit: cover;
+                    border-radius: 10px;
+                    position: absolute;
+                    filter: brightness(0.5);
+                }
+                .contenedor{
+                    
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: $pad-10;
+                        box-sizing: border-box;
+                        align-items: flex-start;
+                        color: white;
+                        text-decoration: none;
+                        
+                        text-align: center;
+    
+                        font: normal 300 12px $opensans;
+                        h3{
+                            font: normal 600 25px $oswald;
+                            text-transform: uppercase;
+                            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);/* 
+                            width: 80%; */
+                            text-align: left;
+                        }
+                        p{
+                            width: 90%;
+                            color: rgb(198, 198, 198);
+                            text-align: left;
+                        }
+                    
+                }
+                
+                
+            }
+            
+             scrollbar-width: none; /* Firefox */
+        }
+        .wrapper::-webkit-scrollbar { /* Chrome */
+            display: none;
+        }
     }
 }
 #muestra-productos{
