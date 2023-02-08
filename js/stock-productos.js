@@ -718,7 +718,7 @@ function mostrarProductos(seleccionados) {
 
         if(producto.categoria.id === 'pizzas' || producto.categoria.id === 'veganas') {
             div.innerHTML = `
-            <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
+            <img loading="lazy" id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
             <div class="casilla-info">
                     <h2 class="nombre">${producto.nombre}</h2>
                     <p class="precio">$${producto.precio1} <span>$${producto.precio2}</span></p>
@@ -738,7 +738,7 @@ function mostrarProductos(seleccionados) {
             `;
         } else {
             div.innerHTML = `
-                <img id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
+                <img loading="lazy" id="img-${producto.id}" class="img-articulo" src="${producto.img}" alt="${producto.nombre}">
                 <div class="casilla-info">
                         <h2 class="nombre">${producto.nombre}</h2>
                         <p class="precio"><span style="padding: 0">$${producto.precio1}</span></p>

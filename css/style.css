@@ -459,6 +459,7 @@ body {
       padding: 0 10px; }
 
 .body-contenedor {
+  min-height: 100vh;
   padding-bottom: 150px; }
   .body-contenedor .contenedor-carro {
     display: flex;
