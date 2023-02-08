@@ -18,7 +18,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Ananá', 'Cereza'],
-        img: './scss/img/pizzas/agridulce.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -30,7 +30,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Jamón', 'Morrones', 'Salsa gol', 'Palmitos'],
-        img: './scss/img/pizzas/la-de-palmito.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -42,7 +42,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Muzza', 'Tomates', 'Ajo', 'Albahaca'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -54,7 +54,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Bacón', 'Alioli', 'Perejil'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -66,7 +66,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Muzza', 'Cebolla morada', 'Morrón'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -78,7 +78,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Salsa roja', 'Pollo'],
-        img: './scss/img/pizzas/pollo-rojo.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -90,7 +90,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'rúcula', 'Jamón crudo', 'Parmesano', 'Aceite de oliva'],
-        img: './scss/img/pizzas/rucula.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -102,7 +102,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Muzza', 'Jamón', 'Huevo', 'Morrón'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -114,7 +114,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Anchoas', 'Aceitunas negras'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -126,7 +126,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Muzza', 'Tomates cherry', 'Pesto'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -138,7 +138,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -150,7 +150,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Trozos de queso brie', 'Albahaca'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -162,7 +162,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Cheddar', 'Pollo', 'Salsa barbacoa'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -174,7 +174,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Salsa de verdeo', 'Pollo', '', ''],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -186,7 +186,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Roquefort', 'Ananá', 'Olivas', ''],
-        img: './scss/img/pizzas/roque-y-ana.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -198,7 +198,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Bacón', 'Salsa picante', 'Ají', ''],
-        img: './scss/img/pizzas/texana.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas',
             id: 'pizzas'
@@ -212,7 +212,7 @@ const productos = [
         precio1: 800,
         precio2: 3100,
         ingredientes: ['Queso vegano'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
             id: 'veganas'
@@ -224,7 +224,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
             id: 'veganas'
@@ -236,7 +236,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Rúcula', 'Tomates cherry', 'Aceite de oliva'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
             id: 'veganas'
@@ -248,7 +248,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
             id: 'veganas'
@@ -260,7 +260,7 @@ const productos = [
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Queso vegano', 'Cebolla morada'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
             id: 'veganas'
@@ -272,7 +272,7 @@ const productos = [
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Salsa picante', 'Ají'],
-        img: './scss/img/pizzas/pizza.png',
+        img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
             id: 'veganas'
@@ -286,7 +286,7 @@ const productos = [
         id: "agridulce-hamburguesa",
         precio1: 1200,
         ingredientes: ['Bife', 'Ananá', 'Rúcula', 'Salsa Napoli golf'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -297,7 +297,7 @@ const productos = [
         id: "chuck-norris-hamburguesa",
         precio1: 1300,
         ingredientes: ['Bife x 2', 'Ketchup casero', 'Cheddar', 'Cebolla caramelizada', 'Bacón'],
-        img: './scss/img/hamburguesas/chuck-norris.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -308,7 +308,7 @@ const productos = [
         id: "especial-hamburguesa",
         precio1: 1100,
         ingredientes: ['Bife', 'Queso', 'Jamón', 'Huevo', 'Tomate', 'Lechuga'],
-        img: './scss/img/hamburguesas/especial.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -330,7 +330,7 @@ const productos = [
         id: "simple-cheddar-hamburguesa",
         precio1: 1100,
         ingredientes: ['Bife', 'Cheddar'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -341,7 +341,7 @@ const productos = [
         id: "doble-cheddar-hamburguesa",
         precio1: 1300,
         ingredientes: ['Bife x 2', 'Cheddar x 2'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -352,7 +352,7 @@ const productos = [
         id: "tapa-arterias-hamburguesa",
         precio1: 1500,
         ingredientes: ['Bife x 3', 'Cheddar x 3', 'Bacón x 3', 'ketchuo casero'],
-        img: './scss/img/hamburguesas/tapa-arterias.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -363,7 +363,7 @@ const productos = [
         id: "big-house-hamburguesa",
         precio1: 1300,
         ingredientes: ['Bife x 2', 'Cebolla caramelizada', 'Bacón', 'Cheddar', 'Pepinillos', 'Lechuga repollada'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -374,7 +374,7 @@ const productos = [
         id: "la-blanca-hamburguesa",
         precio1: 1200,
         ingredientes: ['Bife', 'Jamón', 'Cheddar', 'Salsa blanca', 'Verdeo', 'Salsa Napoli golf'],
-        img: './scss/img/hamburguesas/la-blanca.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -385,7 +385,7 @@ const productos = [
         id: "la-de-napoli-hamburguesa",
         precio1: 1300,
         ingredientes: ['Bife x 2', 'Emental', 'Pepperoni'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -396,7 +396,7 @@ const productos = [
         id: "smoke-hamburguesa",
         precio1: 1100,
         ingredientes: ['Bife', 'Cebolla caramelizada', 'Tomate', 'Emental', 'Bacón', 'Pepinillos', 'Salsa Napoli golf'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -407,7 +407,7 @@ const productos = [
         id: "tradicional-hamburguesa",
         precio1: 1000,
         ingredientes: ['Bife', 'Queso', 'Lechuga', 'Tomate', 'Aderezos'],
-        img: './scss/img/hamburguesas/hamburguesa.png',
+        img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
             id: 'hamburguesas'
@@ -421,7 +421,7 @@ const productos = [
         id: "simples-papas",
         precio1: 800,
         ingredientes: ['Las clásicas de siempre'],
-        img: './scss/img/papas-fritas/simples.png',
+        img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
             id: 'papas-fritas'
@@ -465,7 +465,7 @@ const productos = [
         id: "4-quesos-papas",
         precio1: 1200,
         ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone'],
-        img: './scss/img/papas-fritas/4-quesos.png',
+        img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
             id: 'papas-fritas'
@@ -498,7 +498,7 @@ const productos = [
         id: "texanas-papas",
         precio1: 1000,
         ingredientes: ['Bacón', 'Salsa picante', 'Ají'],
-        img: './scss/img/papas-fritas/texanas.png',
+        img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
             id: 'papas-fritas'
@@ -522,7 +522,7 @@ const productos = [
         id: "carlitos-sandwich",
         precio1: 600,
         ingredientes: ['Mayonesa', 'Jamón', 'Queso'],
-        img: './scss/img/sandwiches/carlitos.png',
+        img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
             id: 'sandwiches'
@@ -555,7 +555,7 @@ const productos = [
         id: "triple-de-pollo-sandwich",
         precio1: 800,
         ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Pollo'],
-        img: './scss/img/sandwiches/triple-de-pollo.png',
+        img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
             id: 'sandwiches'
@@ -566,7 +566,7 @@ const productos = [
         id: "tostado-triple-sandwich",
         precio1: 700,
         ingredientes: ['Manteca', 'Jamón', 'Queso'],
-        img: './scss/img/sandwiches/tostado-triple.png',
+        img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
             id: 'sandwiches'
@@ -588,7 +588,7 @@ const productos = [
         id: "lomo-especial-sandwich",
         precio1: 1600,
         ingredientes: ['Lomito', 'Pan de la casa', 'Queso', 'Jamón', 'Lechuga', 'Tomate'],
-        img: './scss/img/sandwiches/lomito.png',
+        img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
             id: 'sandwiches'
@@ -599,7 +599,7 @@ const productos = [
         id: "triple-de-verdura-sandwich",
         precio1: 750,
         ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Huevo'],
-        img: './scss/img/sandwiches/triple-de-verdura.png',
+        img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
             id: 'sandwiches'
