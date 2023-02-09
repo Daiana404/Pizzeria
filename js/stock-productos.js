@@ -105,7 +105,7 @@ const productos = [
         nombre: "Hamburguesa 01",
         id: "hamburguesa-01",
         precio1: 1200,
-        ingredientes: ['Bife', 'Ananá', 'Rúcula', 'Salsa Napoli golf'],
+        ingredientes: ['Bife', 'Ananá', 'Rúcula'],
         img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -138,7 +138,7 @@ const productos = [
         nombre: "Hamburguesa 04",
         id: "hamburguesa-04",
         precio1: 1300,
-        ingredientes: ['Bife x 2', 'Colchón de rúcula', 'Bacón', 'Queso parmesano/muzza/azul', 'Salsa Napoli golf', 'Lechuga'],
+        ingredientes: ['Bife x 2', 'Colchón de rúcula', 'Bacón', 'Queso parmesano/muzza/azul', 'Lechuga'],
         img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
