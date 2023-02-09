@@ -1,8 +1,8 @@
 const productos = [
     ///////////////////////////Pizzas
     {
-        nombre: "Pepperoni",
-        id: "pepperoni",
+        nombre: "Pizza 01",
+        id: "pizza-01",
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Pepperoni'],
@@ -13,8 +13,8 @@ const productos = [
         }
     },
     {
-        nombre: "Agridulce",
-        id: "agridulce",
+        nombre: "Pizza 02",
+        id: "pizza-02",
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Ananá', 'Cereza'],
@@ -25,8 +25,8 @@ const productos = [
         }
     },
     {
-        nombre: "La de palmito",
-        id: "la-de-palmito",
+        nombre: "Pizza 03",
+        id: "pizza-03",
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Muzza', 'Jamón', 'Morrones', 'Salsa gol', 'Palmitos'],
@@ -37,8 +37,8 @@ const productos = [
         }
     },
     {
-        nombre: "Caprese",
-        id: "caprese",
+        nombre: "Pizza 04",
+        id: "pizza-04",
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Muzza', 'Tomates', 'Ajo', 'Albahaca'],
@@ -48,179 +48,11 @@ const productos = [
             id: 'pizzas'
         }
     },
-    {
-        nombre: "Chuck Norris",
-        id: "chuck-norris",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Bacón', 'Alioli', 'Perejil'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Fugazzeta",
-        id: "fugazzeta",
-        precio1: 1000,
-        precio2: 3800,
-        ingredientes: ['Muzza', 'Cebolla morada', 'Morrón'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Pollo rojo",
-        id: "pollo-rojo",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Salsa roja', 'Pollo'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Rúcula",
-        id: "rucula",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'rúcula', 'Jamón crudo', 'Parmesano', 'Aceite de oliva'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Vellorita",
-        id: "vellorita",
-        precio1: 1000,
-        precio2: 3800,
-        ingredientes: ['Muzza', 'Jamón', 'Huevo', 'Morrón'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Anchoas",
-        id: "anchoas",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Anchoas', 'Aceitunas negras'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Cherry y pesto",
-        id: "cherry-y-pesto",
-        precio1: 1000,
-        precio2: 3800,
-        ingredientes: ['Muzza', 'Tomates cherry', 'Pesto'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "4 Quesos",
-        id: "4-quesos",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Giuliani",
-        id: "giuliani",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Trozos de queso brie', 'Albahaca'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Napoli",
-        id: "napoli",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Cheddar', 'Pollo', 'Salsa barbacoa'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Pollo blanco",
-        id: "pollo-blanco",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Salsa de verdeo', 'Pollo', '', ''],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Roque y ana",
-        id: "roque-y-ana",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Roquefort', 'Ananá', 'Olivas', ''],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
-    {
-        nombre: "Texana",
-        id: "texana",
-        precio1: 1100,
-        precio2: 4200,
-        ingredientes: ['Muzza', 'Bacón', 'Salsa picante', 'Ají', ''],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas',
-            id: 'pizzas'
-        }
-    },
     ///////////////////////////Pizzas veganas
 
     {
-        nombre: "Común",
-        id: "comun-vegan",
-        precio1: 800,
-        precio2: 3100,
-        ingredientes: ['Queso vegano'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas veganas',
-            id: 'veganas'
-        }
-    },
-    {
-        nombre: "Cherry y pesto",
-        id: "cherry-y-pesto-vegan",
+        nombre: "Pizza vegana 01",
+        id: "pizza-vegana-01",
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto'],
@@ -231,8 +63,8 @@ const productos = [
         }
     },
     {
-        nombre: "Rúcula",
-        id: "rucula-vegan",
+        nombre: "Pizza vegana 02",
+        id: "pizza-vegana-02",
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Rúcula', 'Tomates cherry', 'Aceite de oliva'],
@@ -243,8 +75,8 @@ const productos = [
         }
     },
     {
-        nombre: "Caprese",
-        id: "caprese-vegan",
+        nombre: "Pizza vegana 03",
+        id: "pizza-vegana-03",
         precio1: 1000,
         precio2: 3800,
         ingredientes: ['Queso vegano', 'Tomates cherry', 'Pesto'],
@@ -255,23 +87,11 @@ const productos = [
         }
     },
     {
-        nombre: "Fugazzeta",
-        id: "fugazzeta-vegan",
+        nombre: "Pizza vegana 04",
+        id: "pizza-vegana-04",
         precio1: 1100,
         precio2: 4200,
         ingredientes: ['Queso vegano', 'Cebolla morada'],
-        img: './scss/img/pizzas/pepperoni.png',
-        categoria: {
-            nombre: 'Pizzas veganas',
-            id: 'veganas'
-        }
-    },
-    {
-        nombre: "Texana",
-        id: "texana-vegan",
-        precio1: 1000,
-        precio2: 3800,
-        ingredientes: ['Queso vegano', 'Salsa picante', 'Ají'],
         img: './scss/img/pizzas/pepperoni.png',
         categoria: {
             nombre: 'Pizzas veganas',
@@ -282,8 +102,8 @@ const productos = [
     ///////////////////////////Hamburguesas
 
     {
-        nombre: "Agridulce",
-        id: "agridulce-hamburguesa",
+        nombre: "Hamburguesa 01",
+        id: "hamburguesa-01",
         precio1: 1200,
         ingredientes: ['Bife', 'Ananá', 'Rúcula', 'Salsa Napoli golf'],
         img: './scss/img/hamburguesas/la-gourmet.png',
@@ -293,8 +113,8 @@ const productos = [
         }
     },
     {
-        nombre: "Chuck Norris",
-        id: "chuck-norris-hamburguesa",
+        nombre: "Hamburguesa 02",
+        id: "hamburguesa-02",
         precio1: 1300,
         ingredientes: ['Bife x 2', 'Ketchup casero', 'Cheddar', 'Cebolla caramelizada', 'Bacón'],
         img: './scss/img/hamburguesas/la-gourmet.png',
@@ -304,8 +124,8 @@ const productos = [
         }
     },
     {
-        nombre: "Especial",
-        id: "especial-hamburguesa",
+        nombre: "Hamburguesa 03",
+        id: "hamburguesa-03",
         precio1: 1100,
         ingredientes: ['Bife', 'Queso', 'Jamón', 'Huevo', 'Tomate', 'Lechuga'],
         img: './scss/img/hamburguesas/la-gourmet.png',
@@ -315,98 +135,10 @@ const productos = [
         }
     },
     {
-        nombre: "La gourmet",
-        id: "la-gourmet-hamburguesa",
+        nombre: "Hamburguesa 04",
+        id: "hamburguesa-04",
         precio1: 1300,
         ingredientes: ['Bife x 2', 'Colchón de rúcula', 'Bacón', 'Queso parmesano/muzza/azul', 'Salsa Napoli golf', 'Lechuga'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "Simple cheddar",
-        id: "simple-cheddar-hamburguesa",
-        precio1: 1100,
-        ingredientes: ['Bife', 'Cheddar'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "Doble cheddar",
-        id: "doble-cheddar-hamburguesa",
-        precio1: 1300,
-        ingredientes: ['Bife x 2', 'Cheddar x 2'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "Tapa arterias",
-        id: "tapa-arterias-hamburguesa",
-        precio1: 1500,
-        ingredientes: ['Bife x 3', 'Cheddar x 3', 'Bacón x 3', 'ketchuo casero'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "Big house",
-        id: "big-house-hamburguesa",
-        precio1: 1300,
-        ingredientes: ['Bife x 2', 'Cebolla caramelizada', 'Bacón', 'Cheddar', 'Pepinillos', 'Lechuga repollada'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "La blanca",
-        id: "la-blanca-hamburguesa",
-        precio1: 1200,
-        ingredientes: ['Bife', 'Jamón', 'Cheddar', 'Salsa blanca', 'Verdeo', 'Salsa Napoli golf'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "La de napoli",
-        id: "la-de-napoli-hamburguesa",
-        precio1: 1300,
-        ingredientes: ['Bife x 2', 'Emental', 'Pepperoni'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "Smoke",
-        id: "smoke-hamburguesa",
-        precio1: 1100,
-        ingredientes: ['Bife', 'Cebolla caramelizada', 'Tomate', 'Emental', 'Bacón', 'Pepinillos', 'Salsa Napoli golf'],
-        img: './scss/img/hamburguesas/la-gourmet.png',
-        categoria: {
-            nombre: 'Hamburguesas',
-            id: 'hamburguesas'
-        }
-    },
-    {
-        nombre: "Tradicional",
-        id: "tradicional-hamburguesa",
-        precio1: 1000,
-        ingredientes: ['Bife', 'Queso', 'Lechuga', 'Tomate', 'Aderezos'],
         img: './scss/img/hamburguesas/la-gourmet.png',
         categoria: {
             nombre: 'Hamburguesas',
@@ -417,8 +149,8 @@ const productos = [
     ///////////////////////////Papas fritas
  
     {
-        nombre: "Simples",
-        id: "simples-papas",
+        nombre: "Papas 01",
+        id: "papas-01",
         precio1: 800,
         ingredientes: ['Las clásicas de siempre'],
         img: './scss/img/papas-fritas/al-verdeo.png',
@@ -428,8 +160,8 @@ const productos = [
         }
     },
     {
-        nombre: "Gratinadas",
-        id: "gratinadas-papas",
+        nombre: "Papas 02",
+        id: "papas-02",
         precio1: 1000,
         ingredientes: ['Queso'],
         img: './scss/img/papas-fritas/al-verdeo.png',
@@ -439,8 +171,8 @@ const productos = [
         }
     },
     {
-        nombre: "Con cheddar",
-        id: "con-cheddar-papas",
+        nombre: "Papas 03",
+        id: "papas-03",
         precio1: 1000,
         ingredientes: ['Cheddar'],
         img: './scss/img/papas-fritas/al-verdeo.png',
@@ -450,65 +182,10 @@ const productos = [
         }
     },
     {
-        nombre: "Con cheddar y panceta",
-        id: "con-cheddar-y-panceta-papas",
+        nombre: "Papas 04",
+        id: "papas-04",
         precio1: 800,
         ingredientes: ['Cheddar', 'Panceta'],
-        img: './scss/img/papas-fritas/al-verdeo.png',
-        categoria: {
-            nombre: 'Papas fritas',
-            id: 'papas-fritas'
-        }
-    },
-    {
-        nombre: "4 quesos",
-        id: "4-quesos-papas",
-        precio1: 1200,
-        ingredientes: ['Muzza', 'Cheddar', 'Queso azul', 'Provolone'],
-        img: './scss/img/papas-fritas/al-verdeo.png',
-        categoria: {
-            nombre: 'Papas fritas',
-            id: 'papas-fritas'
-        }
-    },
-    {
-        nombre: "Azulada",
-        id: "azulada-papas",
-        precio1: 1000,
-        ingredientes: ['Queso azul'],
-        img: './scss/img/papas-fritas/al-verdeo.png',
-        categoria: {
-            nombre: 'Papas fritas',
-            id: 'papas-fritas'
-        }
-    },
-    {
-        nombre: "Al verdeo",
-        id: "al-verdeo-papas",
-        precio1: 1000,
-        ingredientes: ['Cebolla de verdeo'],
-        img: './scss/img/papas-fritas/al-verdeo.png',
-        categoria: {
-            nombre: 'Papas fritas',
-            id: 'papas-fritas'
-        }
-    },
-    {
-        nombre: "Texanas",
-        id: "texanas-papas",
-        precio1: 1000,
-        ingredientes: ['Bacón', 'Salsa picante', 'Ají'],
-        img: './scss/img/papas-fritas/al-verdeo.png',
-        categoria: {
-            nombre: 'Papas fritas',
-            id: 'papas-fritas'
-        }
-    },
-    {
-        nombre: "Alioli",
-        id: "alioli-papas",
-        precio1: 900,
-        ingredientes: ['Alioli'],
         img: './scss/img/papas-fritas/al-verdeo.png',
         categoria: {
             nombre: 'Papas fritas',
@@ -518,8 +195,8 @@ const productos = [
     ///////////////////////////Sandwiches
     
     {
-        nombre: "Carlitos",
-        id: "carlitos-sandwich",
+        nombre: "Sandwich 01",
+        id: "sandwich-01",
         precio1: 600,
         ingredientes: ['Mayonesa', 'Jamón', 'Queso'],
         img: './scss/img/sandwiches/sandwich.png',
@@ -529,8 +206,8 @@ const productos = [
         }
     },
     {
-        nombre: "A la mostaza",
-        id: "a-la-mostaza-sandwich",
+        nombre: "Sandwich 02",
+        id: "sandwich-02",
         precio1: 1600,
         ingredientes: ['Pechuga de pollo a la mostaza', 'Tomate asado', 'Rúcula', 'Parmesano'],
         img: './scss/img/sandwiches/sandwich.png',
@@ -540,65 +217,10 @@ const productos = [
         }
     },
     {
-        nombre: "Lomo cheddar",
-        id: "lomo-cheddar-sandwich",
+        nombre: "Sandwich 03",
+        id: "sandwich-03",
         precio1: 1600,
         ingredientes: ['Lomito', 'Cheddar', 'Cebolla caramelizada', 'Rúcula', 'Tomate asado'],
-        img: './scss/img/sandwiches/sandwich.png',
-        categoria: {
-            nombre: 'Sandwiches',
-            id: 'sandwiches'
-        }
-    },
-    {
-        nombre: "Triple de pollo",
-        id: "triple-de-pollo-sandwich",
-        precio1: 800,
-        ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Pollo'],
-        img: './scss/img/sandwiches/sandwich.png',
-        categoria: {
-            nombre: 'Sandwiches',
-            id: 'sandwiches'
-        }
-    },
-    {
-        nombre: "Tostado triple",
-        id: "tostado-triple-sandwich",
-        precio1: 700,
-        ingredientes: ['Manteca', 'Jamón', 'Queso'],
-        img: './scss/img/sandwiches/sandwich.png',
-        categoria: {
-            nombre: 'Sandwiches',
-            id: 'sandwiches'
-        }
-    },
-    {
-        nombre: "Napoli",
-        id: "napoli-sandwich",
-        precio1: 1600,
-        ingredientes: ['Pan de la casa', 'Pollo', 'Cebolla morada', 'Barbacoa', 'Cheddar', 'Tomate asado'],
-        img: './scss/img/sandwiches/sandwich.png',
-        categoria: {
-            nombre: 'Sandwiches',
-            id: 'sandwiches'
-        }
-    },
-    {
-        nombre: "Lomo especial",
-        id: "lomo-especial-sandwich",
-        precio1: 1600,
-        ingredientes: ['Lomito', 'Pan de la casa', 'Queso', 'Jamón', 'Lechuga', 'Tomate'],
-        img: './scss/img/sandwiches/sandwich.png',
-        categoria: {
-            nombre: 'Sandwiches',
-            id: 'sandwiches'
-        }
-    },
-    {
-        nombre: "Triple de verdura",
-        id: "triple-de-verdura-sandwich",
-        precio1: 750,
-        ingredientes: ['Mayonesa', 'Jamón', 'Queso', 'Tomate', 'Lechuga', 'Huevo'],
         img: './scss/img/sandwiches/sandwich.png',
         categoria: {
             nombre: 'Sandwiches',
