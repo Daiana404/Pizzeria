@@ -18,25 +18,21 @@
     
 
 
-    <link rel="shortcut icon" href="./scss/ico/pizza.png">
+    <link rel="shortcut icon" href="./scss/ico/logo-mini-parrpizzas.png">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Pizzería</title>
+    <title>Parripizzas</title>
 
 </head>
 <body>
-    <div class="solo-mobile">
-        <h1>Pizzería</h1>
-        <p>Solo disponible para dispositivos mobile</p> <img src="./scss/ico/sonreir.svg" alt="">
-    </div>
     <div class="body-contenedor">
-        <nav class="navegador" id="navegador">
+        <nav class="navegador expanded" id="navegador">
             <div class="box-menu">
                 
                 <ion-icon id="close-menu-icon" class="nav-bar-iconos" name="close-outline"></ion-icon>   
     
                 <ul class="lista">
-                    <li><a href="#inicio">Pizzería</a></li>
-                    <li><a href="#">Sección</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#categorias">Menú</a></li>
                     <li><a href="#nosotros">Sobre Nosotros</a></li>
                     <li id="item-carrito">
@@ -58,14 +54,14 @@
     
         <main>
             <section id="inicio">
-                <img loading="lazy" class="fondo" src="https://i.pinimg.com/564x/38/fa/c6/38fac68e57bc3c61b3e8844c493877dd.jpg" alt="">
-    
-                <img loading="lazy" id="logo-napoli" src="./scss/img/logo.png" alt="Logo">
-    
+                <!-- <img loading="lazy" class="fondo" src="https://i.pinimg.com/564x/38/fa/c6/38fac68e57bc3c61b3e8844c493877dd.jpg" alt=""> -->
+                <video class="fondo" src="https://player.vimeo.com/progressive_redirect/playback/777652756/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=ee641c3d856c2d3b3adb61e9fd7abcfc1d0515cd117bd989b3e84e68fc6c1726" autoplay="true" muted="true" loop="true"></video>
+                <!-- <h1 class="nombre-logo">parri <br>  <span>pizzas</span></h1> -->
+                <img class="nombre-logo" src="scss/img/logo-parripizzas.png" alt="">
                 
                 <div class="inicio-promo">
                     <p>Estás a punto de entrar <br> a una explosión de sabor e intensidad.</p>
-                    <p class="pregunta">¿Te animás a probar?</p>
+                    <p class="pregunta">¿Te animás <br> a probar?</p>
                 </div>
                 <a href="#categorias" class="btn-menu">Ver menú <ion-icon name="arrow-forward-outline"></ion-icon> </a>
     
@@ -139,7 +135,8 @@
                         <h3>Dónde encontrarnos</h3> 
     
                         <p class="descripcion color-gray">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex excepturi veritatis error ea quam autem fuga quisquam earum dolorum rem commodi veniam, mollitia sequi hic dicta nulla tempora repudiandae.</p>
+                            Comer pizza no es un pecado, es un poder irresistible. <br>
+                            Esta es una típica pizzeria de ciudad, con mesones, ambiente decorado con buen gusto amplio, buena variedad de pizzas, un lugar donde va la mayoría de la gente ...</p>
     
                         <div><h4>whatsapp:</h4> <p class="color-gray">348X-XXX456</p></div>
                         <div><h4>instagram:</h4><p class="color-gray">@pizzeria</p></div><!-- 
@@ -151,18 +148,22 @@
             </section>
         </main>
     
-        <footer id="pie">
-            <div class="copyright">© copyright by Pizzería</div>
-            <div>
-                <a href="#inicio">inicio</a> <a href="#categorias">menu</a>
-                <a href="#">Sección</a>
+        <footer id="pie">  
+            <div class="enlaces">
+                <div class="enlaces-rapidos">
+                    <a href="#inicio">inicio</a> <a href="#categorias">menu</a>
+                    <a href="#">preguntas frecuentes</a>
+                </div>
+                <div class="social-media">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </div>
             </div>
-            <div class="social-media">
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <div class="copyright">
+                <p>Copyright © 2023 Parripizzas</p>
+                <p>desarrollado por<a href="https://www.instagram.com/daia_polo/?next=%2F"> Polo Daiana</a></p>
             </div>
-            <div class="creditos">desarrollado por<a href="https://www.instagram.com/daia_polo/?next=%2F">Polo Daiana</a></div>
         </footer>
     
     </div>

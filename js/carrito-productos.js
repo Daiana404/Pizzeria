@@ -17,8 +17,7 @@ eliminarPedido.addEventListener('click', () => {
     msgSinPedido.style.display = 'inherit';
     contenedorTicket.style.display = 'none';
 })
-
-if(productosEnCarrito  === null || productosEnCarrito.lenght === 0) {
+if(productosEnCarrito  === null || productosEnCarrito.lenght === 0 || productosEnCarrito[0] === undefined) {
     contenedorTicket.style.display = 'none';
     msgSinPedido.style.display = 'inherit';
     eliminarPedido.style.display = 'none';

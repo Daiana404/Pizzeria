@@ -1,6 +1,5 @@
 .body-contenedor{
     min-height: 100vh;
-    padding-bottom: $h-pie;
     .contenedor-carro{
         display: flex;
         justify-content: center;
@@ -97,7 +96,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            text-transform: capitalize;
             ion-icon{
                 width: 20px;
                 height: 20px;
@@ -112,7 +110,7 @@
             div{
                 height: 100%;
                 width: $h-mnav / 2;
-                background-color: $rojo;
+                background-color: $clr-secundario;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 display: flex;justify-content: center;align-items: center;
@@ -159,7 +157,7 @@
         font-size: 45px;
     }
 }
-body{
+.body-contenedor{
     position: relative;
     .pie-carrito{
         position: absolute;

@@ -59,7 +59,7 @@
                 @extend .precio;
                 /* color: rgb(160, 24, 24); */
                 padding-left: $pad-15;
-                color: $rojo;
+                color: $clr-secundario;
             }
         }
         .indicacion-pizzas{
@@ -78,7 +78,7 @@
         }
     }
     .casilla-add{
-        background-color: $rojo;
+        background-color: $clr-secundario;
         position: absolute;
         right: $pad-20;
         bottom: $pad-20;
