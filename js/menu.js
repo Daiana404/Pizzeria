@@ -14,13 +14,3 @@ clsMenu.onclick = () => {
     icoCarrito.style.display = 'inherit';
     icoMenu.style.display = 'inherit'
 }
-let mediaQ = (x) => {
-    if (x.matches) {
-        navegador.classList.remove('expanded');
-    } else {
-        navegador.classList.add('expanded');
-    }
-}
-const x = window.matchMedia("(max-width: 750px)");
-mediaQ(x);
-x.addListener(mediaQ);
