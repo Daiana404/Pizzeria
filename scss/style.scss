@@ -48,14 +48,32 @@ body{
     .nav-bar-iconos:hover{
         color: $clr-secundario;
     }
+    .numero-carrito{
+        background-color: $clr-secundario;
+        width: 14px;
+        height: 14px;
+        box-sizing: content-box;
+        position: absolute;
+        top: 0;
+        right: -5px;
+        border-radius: 50%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 8.5px;
+        font-weight: 600;
+        color: $blanco;
+    }
     .box-menu{
         z-index: 3;
         background-color: $blanco;
         border-bottom-left-radius: $br-10;
         padding: $pad-20;
         padding-top: 45px;
-        width: $w-nav;
-        min-height: $h-nav;
+        max-width: $w-nav;
+        width: 80vw;
+        max-height: $h-nav;
+        height: 100vh;
     
         position: absolute; top: 0; right: 0;
         transform: translate(100%, -100%);
@@ -93,8 +111,11 @@ body{
                 display: flex;
                 justify-content: space-between;
                 a{
-                    display: flex;
-                    align-items: center;
+                    display: flex; align-items: center;
+                    position: relative;
+                    .numeritos{
+                        @extend .numero-carrito;
+                    }
                 }
             }
         }
@@ -104,21 +125,8 @@ body{
         justify-content: center;
         align-items: center;
         position: relative;
-        #numerito{
-            background-color: $clr-secundario;
-            width: 14px;
-            height: 14px;
-            box-sizing: content-box;
-            position: absolute;
-            top: 0;
-            right: -5px;
-            border-radius: 50%;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            font-size: 8.5px;
-            font-weight: 600;
-            color: $blanco;
+        .numeritos{
+            @extend .numero-carrito;
         }
     }
 }

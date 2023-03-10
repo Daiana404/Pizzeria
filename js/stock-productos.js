@@ -297,7 +297,8 @@ const tituloCategoriaContenedor = document.getElementById('titulo-categoria');
 //Agregar al carro
 let restaBotones = document.querySelectorAll('.resta-btn');
 let botonesAgregar = document.querySelectorAll('.casilla-add');
-const numerito = document.querySelector('#numerito');
+/* const numerito = document.querySelector('#numerito'); */
+const numeritos = document.querySelectorAll('.numeritos');
 //Animación
 let imagenes = document.querySelectorAll('.img-articulo');
 
@@ -460,15 +461,16 @@ function eliminarDelCarro(e) {
 }
 
 function actualizarNumerito() {
-    let numeroCarro = productosEnCarro.reduce((acc, producto) => acc + producto.cantidad, 0);
-
-    if(numeroCarro <= 0){
-        numerito.style.display = 'none';
-        numerito.innerText = 0;
-    } else {
-        numerito.style.display = 'flex';
-        numerito.innerText = numeroCarro;
-    }
+    numeritos.forEach(numerito => {
+        let numeroCarro = productosEnCarro.reduce((acc, producto) => acc + producto.cantidad, 0);
+        if(numeroCarro <= 0){
+            numerito.style.display = 'none';
+            numerito.innerText = 0;
+        } else {
+            numerito.style.display = 'flex';
+            numerito.innerText = numeroCarro;
+        }
+    })
 }
 
 function actualizarContadores() {
